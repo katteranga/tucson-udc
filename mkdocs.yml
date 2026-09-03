@@ -1,4 +1,27 @@
 site_name: Tucson Open-UDC
 site_url: https://katteranga.github.io/tucson-udc/
+repo_url: https://github.com/katteranga/tucson-udc/
+edit_uri: edit/main/docs/
 theme:
   name: material
+  palette:
+    primary: white
+    accent: blue
+  font: 
+    text: Montserrat
+    code: IBM Plex Mono
+  language: en
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.path
+    - toc.follow
+    - toc.integrate 
+    - search.highlight
+    - content.action.edit
+    
+  plugins:
+    - tags
