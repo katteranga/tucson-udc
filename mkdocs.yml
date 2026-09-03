@@ -7,6 +7,7 @@ theme:
   palette:
     primary: white
     accent: blue
+  logo: assets/TfE_logo_300_300.png
   font: 
     text: Montserrat
     code: IBM Plex Mono
