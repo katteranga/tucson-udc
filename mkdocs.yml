@@ -23,6 +23,8 @@ theme:
     - toc.integrate 
     - search.highlight
     - content.action.edit
-    
   plugins:
     - tags
+markdown_extensions:
+  - toc:
+      permalink: true
