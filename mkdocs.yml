@@ -1,4 +1,4 @@
-site_name: Tucson Open-UDC
+site_name: Tucson for Everyone - Open Codes Project
 site_url: https://katteranga.github.io/tucson-udc/
 repo_url: https://github.com/katteranga/tucson-udc/
 edit_uri: edit/main/docs/
@@ -23,6 +23,8 @@ theme:
     - toc.integrate 
     - search.highlight
     - content.action.edit
-    
   plugins:
     - tags
+markdown_extensions:
+  - toc:
+      permalink: true
