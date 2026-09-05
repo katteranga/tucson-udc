@@ -1,0 +1,51 @@
+## 8 Land Division, Land Split, And Subdivision Standards
+
+Section
+
+8.1. PURPOSE
+
+8.2. APPLICABILITY
+
+8.3. LAND DIVISION
+
+8.3.1. Land Split
+
+8.4. SUBDIVISIONS
+
+8.4.1. Block Plat
+
+8.4.2. Residential and Non-Residential Condominium and Condominium Conversion Plat
+
+8.4.3. Minor Subdivision
+
+8.4.4. Tentative Plat
+
+8.4.5. Final Plat
+
+8.5. EXPIRATION DATES
+
+8.5.1. Tentative Plat
+
+8.5.2. Final Plat
+
+8.6. GENERAL REQUIREMENTS FOR SUBDIVISIONS
+
+8.6.1. General Provisions
+
+8.6.2. Subdivision Improvements and Assurances
+
+8.6.3. Survey Monuments Required
+
+8.6.4. Permits for Model Homes
+
+8.6.5. Land Clearing and Grading
+
+8.6.6. Plat Abandonment
+
+8.7. SUBDIVISION DESIGN STANDARDS
+
+8.7.1. Parks, Recreational Facilities, Fire Stations, and School Sites
+
+8.7.2. Phased Subdivisions
+
+8.7.3. Flexible Lot Development (FLD)
