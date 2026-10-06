@@ -28,3 +28,4 @@ theme:
 markdown_extensions:
   - toc:
       permalink: true
+  - sane_lists  # honor list start numbers, e.g. "2." renders as 2, not 1
