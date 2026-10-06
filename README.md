@@ -58,7 +58,19 @@ When the City publishes a new revision, download a fresh export, replace `tucson
 
 ### 2. Tables
 
-The UDC's tables (use tables, dimensional standards, parking ratios and others) come from a word-processor format. The export flattens them, so each cell becomes its own paragraph. See [4.8 Use Tables](docs/unified_development_code/4.8%20Use%20Tables.md). Each table needs to be rebuilt as a Markdown table or an equivalent that still reads well when rendered and still produces clean diffs.
+The UDC's tables (use tables, dimensional standards, parking ratios and others) come from a word-processor format, and the original export flattened them so that each cell became its own paragraph.
+
+All 98 tables have been rebuilt from the structure in `tucson-az-2.html` by [tools/convert_tables.py](tools/convert_tables.py):
+
+- **29 simple tables** are Markdown pipe tables.
+- **69 tables with merged cells** (`colspan`/`rowspan`) are minimal HTML tables, with one cell per line and no styling, because pipe tables can't merge cells.
+- A table's title row becomes a bold line above it, and its note rows become paragraphs below it.
+
+A table was only replaced where its flattened text matched the export word for word, so the rebuild didn't change any text.
+
+American Legal's HTML repeats each table's header rows in a separate "sticky header" copy. The old flattened text included both copies, so 49 tables had their headers printed twice. The checker now ignores the sticky copy, and the rebuilt tables show each header once.
+
+`convert_tables.py` is a one-time migration. To edit a table now, edit the Markdown or HTML directly. When writing an HTML table by hand, put each `<table>` at the start of a line; the checker reads everything from there to `</table>` as raw HTML, so Markdown characters like `*` are taken literally.
 
 ## Repository layout
 
@@ -72,6 +84,7 @@ tucson-az-1.txt                Original export from American Legal: plain text
 tucson-az-2.html               Original export from American Legal: HTML
 tucson-az-3.md                 Original export from American Legal: Markdown
 tools/verify_baseline.py       Checks docs/ against the published export (see Milestone 1)
+tools/convert_tables.py        One-time rebuild of the tables from the export
 mkdocs.yml                     Site configuration (MkDocs Material theme)
 .github/workflows/ci.yml       Builds and deploys the site to GitHub Pages on every push to main
 ```
@@ -101,6 +114,7 @@ Pushing to `main` rebuilds and publishes the site automatically.
 
 Keep this section updated as development progresses. Newest entries go first.
 
+- **2026-10-06** – Rebuilt all 98 tables (29 pipe, 69 HTML) and removed the duplicated headers in 49 of them. Still 106 of 112 sections matching, with the same open items.
 - **2026-10-06** – Added `tools/verify_baseline.py`. The first run found 20 of 112 sections differing from the February 9, 2026 export. Fixed conversion errors, bringing it to 106 of 112:
   - list numbers reset to "1." in 2.2, 3.7 and 5.12, with `sane_lists` turned on so the site shows the published numbers
   - straight quotes in 1.1
