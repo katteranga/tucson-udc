@@ -1,0 +1,9774 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://katteranga.github.io/tucson-udc/unified_development_code/4.8%20Use%20Tables/">
+      
+      
+        <link rel="prev" href="../4.7%20Zones%20-%20Purpose/">
+      
+      
+        <link rel="next" href="../4.9%20Use-Specific%20Standards/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>4.8 Use Tables - Tucson for Everyone - Open Codes Project</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CIBM+Plex+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"IBM Plex Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#48-use-tables" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Tucson for Everyone - Open Codes Project" class="md-header__button md-logo" aria-label="Tucson for Everyone - Open Codes Project" data-md-component="logo">
+      
+  <img src="../../assets/TfE_logo_300_300.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tucson for Everyone - Open Codes Project
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4.8 Use Tables
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/katteranga/tucson-udc/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Summary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ordinances/" class="md-tabs__link">
+          
+  
+  
+  Ordinances
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../1%20General%20Provisions/" class="md-tabs__link">
+          
+  
+  
+  Unified development code
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tucson for Everyone - Open Codes Project" class="md-nav__button md-logo" aria-label="Tucson for Everyone - Open Codes Project" data-md-component="logo">
+      
+  <img src="../../assets/TfE_logo_300_300.png" alt="logo">
+
+    </a>
+    Tucson for Everyone - Open Codes Project
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/katteranga/tucson-udc/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ordinances
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ordinances
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ordinances/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ordinances
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unified development code
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unified development code
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1%20General%20Provisions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 General Provisions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.1%20Title%20And%20Effective%20Date/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Title And Effective Date
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.2%20Authority/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Authority
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.3%20Purpose%20Of%20This%20Code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Purpose Of This Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.4%20Applicability%20and%20Jurisdiction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.4 Applicability and Jurisdiction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.5%20Determinations%20Of%20The%20Unified%20Development%20Code%20%28UDC%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.5 Determinations Of The Unified Development Code (UDC)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.6%20Conflicting%20Provisions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.6 Conflicting Provisions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.7%20Transitional%20Regulations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.7 Transitional Regulations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.8%20Severability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.8 Severability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10%20Enforcement%20And%20Penalties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 Enforcement And Penalties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.1%20Purpose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10.1 Purpose
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.2%20Enforcement%20Authority/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10.2 Enforcement Authority
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.3%20Violations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10.3 Violations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.4%20Penalties%20And%20Remedies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10.4 Penalties And Remedies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11%20Definitions%20And%20Rules%20Of%20Construction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 Definitions And Rules Of Construction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.1%20Article%20Organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11.1 Article Organization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.2%20General%20Rules%20For%20Construction%20Of%20Language/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11.2 General Rules For Construction Of Language
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.3%20Definitions%20Of%20Land%20Use%20Groups%2C%20Classes%2C%20And%20Types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11.3 Definitions Of Land Use Groups, Classes, And Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.4%20Other%20Terms%20Defined/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11.4 Other Terms Defined
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2%20Review%20Authorities%20and%20Powers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 Review Authorities and Powers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.1%20Purpose%20Of%20Article/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Purpose Of Article
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.2%20Review%20And%20Decision-Making%20Bodies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Review And Decision Making Bodies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3%20General%20Procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 General Procedures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.1%20Purpose%20Of%20Article/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Purpose Of Article
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.10%20Board%20Of%20Adjustment%20Appeals%20And%20Variances/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.10 Board Of Adjustment Appeals And Variances
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.11%20Administrative%20Modifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.11 Administrative Modifications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.12%20Miscellaneous%20Permits%20And%20Approvals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.12 Miscellaneous Permits And Approvals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2%20General%20Requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 General Requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.3%20Zoning%20Compliance%20Review%20Procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Zoning Compliance Review Procedures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.4%20Special%20Exception%20Land%20Uses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.4 Special Exception Land Uses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.5%20Rezoning%20%28Change%20Of%20Zoning%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.5 Rezoning (Change Of Zoning)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.6%20Land%20Use%20Plan%20Adoption%20And%20Amendment%20Procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.6 Land Use Plan Adoption And Amendment Procedures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.7%20UDC%20Text%20Amendment%20Procedure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.7 UDC Text Amendment Procedure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.8%20Land%20Division%20And%20Subdivision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.8 Land Division And Subdivision
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.9%20Appeals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.9 Appeals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4%20Zones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 Zones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.1%20Purpose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 Purpose
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.10%20Accessory%20Uses%2C%20Buildings%2C%20And%20Structures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.10 Accessory Uses, Buildings, And Structures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.11%20Temporary%20Use%20Or%20Building/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.11 Temporary Use Or Building
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.2%20Establishment%20Of%20Boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 Establishment Of Boundaries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.3%20Categories%20Of%20Land%20Uses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.3 Categories Of Land Uses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.4%20Organization%20Of%20Land%20Uses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.4 Organization Of Land Uses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.5%20More%20Restrictive%20Zoning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.5 More Restrictive Zoning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.6%20Zoning%20Of%20Land%20Annexed%20Into%20The%20City/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.6 Zoning Of Land Annexed Into The City
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.7%20Zones%20-%20Purpose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.7 Zones   Purpose
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.8 Use Tables
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.8 Use Tables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#48-use-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8 Use Tables
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.8 Use Tables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#481-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8.1 General
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#482-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8.2 Organization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#483-permitted-uses-rural-and-suburban-residential-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8.3 Permitted Uses: Rural And Suburban Residential Zones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#484-permitted-uses-urban-residential-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8.4 Permitted Uses: Urban Residential Zones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#485-permitted-uses-office-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8.5 Permitted Uses: Office Zones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#486-permitted-uses-commercial-and-mixed-use-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8.6 Permitted Uses: Commercial And Mixed Use Zones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#487-permitted-uses-industrial-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8.7 Permitted Uses: Industrial Zones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#488-permitted-uses-special-use-zones-1-os-ir-p-rv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8.8 Permitted Uses: Special Use Zones (1) - OS, IR, P &amp; RV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#489-permitted-uses-special-use-zones-2-nc-rvc-mu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8.9 Permitted Uses: Special Use Zones (2) - NC, RVC, &amp; MU
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.9%20Use-Specific%20Standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.9 Use Specific Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5%20Overlay%20Zones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 Overlay Zones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.1%20Purpose%20Of%20Overlay%20Zones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.1 Purpose Of Overlay Zones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.10%20Neighborhood%20Preservation%20Zone%20%28NPZ%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.10 Neighborhood Preservation Zone (NPZ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.11%20Community%20Corridors%20Tool%20%28CCT%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.11 Community Corridors Tool (CCT)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.12%20Downtown%20Area%20Infill%20Incentive%20District%20%28IID%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.12 Downtown Area Infill Incentive District (IID)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.13%20Urban%20Overlay%20District%20%28UOD%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.13 Urban Overlay District (UOD)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.2%20Hillside%20Development%20Zone%20%28HDZ%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.2 Hillside Development Zone (HDZ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.3%20Scenic%20Corridor%20Zone%20%28SCZ%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.3 Scenic Corridor Zone (SCZ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.4%20Major%20Street%20And%20Routes%20Setback%20Zone%20%28MS%26R%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.4 Major Street And Routes Setback Zone (MS&R)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.5%20Gateway%20Corridor%20Zone%20%28GCZ%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.5 Gateway Corridor Zone (GCZ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.6%20Airport%20Environs%20Zone%20%28AEZ%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.6 Airport Environs Zone (AEZ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.7%20Environmental%20Resource%20Zone%20%28ERZ%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.7 Environmental Resource Zone (ERZ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.8%20%E2%80%9CH%E2%80%9D%20Historic%20Preservation%20Zone%20%28HPZ%29%20And%20%E2%80%9CHL%E2%80%9D%20Historic%20Landmark%20%28HL%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.8 “H” Historic Preservation Zone (HPZ) And “HL” Historic Landmark (HL)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.9%20Drachman%20School%20Overlay%20Zone%20%28DSO%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.9 Drachman School Overlay Zone (DSO)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6%20Dimensional%20Standards%20and%20Measurements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 Dimensional Standards and Measurements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.1%20Purpose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.1 Purpose
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.2%20Applicability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.2 Applicability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.3%20Dimensional%20Standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.3 Dimensional Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.4%20Rules%20Of%20Measurement%20And%20Exceptions%20To%20Dimensional%20Standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.4 Rules Of Measurement And Exceptions To Dimensional Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.5%20Principal%20Land%20Use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.5 Principal Land Use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.6%20Accessory%20Uses%2C%20Buildings%2C%20And%20Structures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.6 Accessory Uses, Buildings, And Structures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7%20Development%20Standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 Development Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.1%20Purpose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.1 Purpose
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.10%20Alleys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.10 Alleys
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.11%20Detention%20And%20Retention%20Basins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.11 Detention And Retention Basins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.12%20Easements%20Required/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.12 Easements Required
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.13%20Excavating%20And%20Grading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.13 Excavating And Grading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.14%20Hydrology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.14 Hydrology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.15%20Solid%20Waste%20And%20Recycling%20Disposal%2C%20Collection%2C%20And%20Storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.15 Solid Waste And Recycling Disposal, Collection, And Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.16%20Utilities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.16 Utilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.2%20Applicability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.2 Applicability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.3%20Solar%20Considerations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.3 Solar Considerations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.4%20Motor%20Vehicle%20And%20Bicycle%20Parking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.4 Motor Vehicle And Bicycle Parking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.5%20Off-Street%20Loading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.5 Off Street Loading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.6%20Landscaping%20And%20Screening/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.6 Landscaping And Screening
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.7%20Native%20Plant%20Preservation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.7 Native Plant Preservation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.8%20Access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.8 Access
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.9%20Streets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.9 Streets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A%20Sign%20Standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A Sign Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.1%20Purpose%2C%20Intent%2C%20And%20Applicability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.1 Purpose, Intent, And Applicability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.10%20Sign%20Types%20And%20General%20Standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.10 Sign Types And General Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.11%20Special%20Districts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.11 Special Districts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.12%20Appeals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.12 Appeals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.13%20Sign%20Design%20Review%20Committee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.13 Sign Design Review Committee
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.2%20Interpretation%2C%20Severability%2C%20And%20Non-Commercial%20Speech%20Substitution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.2 Interpretation, Severability, And Non Commercial Speech Substitution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.3%20Definitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.3 Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.4%20Permits%2C%20Inspections%2C%20And%20Fees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.4 Permits, Inspections, And Fees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.5%20Violations%2C%20Enforcement%2C%20Penalties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.5 Violations, Enforcement, Penalties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.6%20Measurements%2C%20Location%2C%20And%20General%20Requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.6 Measurements, Location, And General Requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.7%20Sign%20Design%20Options/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.7 Sign Design Options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.8%20Exempt%20And%20Prohibited%20Signs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.8 Exempt And Prohibited Signs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7A.9%20Nonconforming%20Signs%20And%20Change%20Of%20Use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7A.9 Nonconforming Signs And Change Of Use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8%20Land%20Division%2C%20Land%20Split%2C%20And%20Subdivision%20Standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8 Land Division, Land Split, And Subdivision Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.1%20Purpose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.1 Purpose
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.2%20Applicability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.2 Applicability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.3%20Land%20Division/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.3 Land Division
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.4%20Subdivisions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.4 Subdivisions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.5%20Expiration%20Dates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.5 Expiration Dates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.6%20General%20Requirements%20For%20Subdivisions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.6 General Requirements For Subdivisions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.7%20Subdivision%20Design%20Standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.7 Subdivision Design Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9%20Nonconforming%20Uses%2C%20Buildings%20And%20Structures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9 Nonconforming Uses, Buildings And Structures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.1%20General/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9.1 General
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.2%20Nonconforming%20Use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9.2 Nonconforming Use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.3%20Nonconforming%20Structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9.3 Nonconforming Structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../References-to-Ordinances/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References to Ordinances
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Summary
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../1%20General%20Provisions/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Unified development code
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/katteranga/tucson-udc/edit/main/docs/unified_development_code/4.8 Use Tables.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+  <h1>4.8 Use Tables</h1>
+
+<h3 id="48-use-tables">4.8 Use Tables<a class="headerlink" href="#48-use-tables" title="Permanent link">&para;</a></h3>
+<h4 id="481-general">4.8.1 General<a class="headerlink" href="#481-general" title="Permanent link">&para;</a></h4>
+<p>The following use tables, Tables 4.8-1 through 4.8-7, establish the permitted principal, special exception, and accessory uses for each zone in the City of Tucson. The use-specific standards that apply to uses in certain zones are included in the far right column of each table.</p>
+<h4 id="482-organization">4.8.2 Organization<a class="headerlink" href="#482-organization" title="Permanent link">&para;</a></h4>
+<p>A. Zone Groups</p>
+<ol>
+<li>
+<p>In several instances, the order in which the zones are provided in the permitted use tables do not relate to one particular zone ’s degree of restrictiveness in relation to other zones . For the official hierarchy of more- to less-restrictive zones , see Section 4.5.</p>
+</li>
+<li>
+<p>For organizational, formatting, and ease of use purposes, the zones have been grouped as shown in the following table:</p>
+</li>
+</ol>
+<table>
+<tr>
+  <th>Table Number</th>
+  <th>Group</th>
+  <th colspan="5">Zones Included</th>
+</tr>
+<tr>
+  <td>4.8-1</td>
+  <td>Rural and Suburban Residential Zones</td>
+  <td>RH</td>
+  <td>SR</td>
+  <td>SH</td>
+  <td>RX-1</td>
+  <td>RX-2</td>
+</tr>
+<tr>
+  <td>4.8-2</td>
+  <td>Urban Residential Zones</td>
+  <td>R-1</td>
+  <td>R-2</td>
+  <td>R-3</td>
+  <td>MH-1</td>
+  <td>MH-2</td>
+</tr>
+<tr>
+  <td>4.8-3</td>
+  <td>Office Zones</td>
+  <td>O-1</td>
+  <td>O-2</td>
+  <td>O-3</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>4.8-4</td>
+  <td>Commercial and Mixed Use Zones</td>
+  <td>C-1</td>
+  <td>C-2</td>
+  <td>C-3</td>
+  <td>OCR-1</td>
+  <td>OCR-2</td>
+</tr>
+<tr>
+  <td>4.8-5</td>
+  <td>Industrial Zones</td>
+  <td>P-I</td>
+  <td>I-1</td>
+  <td>I-2</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>4.8-6</td>
+  <td>Special Use Zones (1)</td>
+  <td>OS</td>
+  <td>IR</td>
+  <td>P</td>
+  <td>RV</td>
+  <td></td>
+</tr>
+<tr>
+  <td>4.8-7</td>
+  <td>Special Use Zones (2)</td>
+  <td>NC</td>
+  <td>RVC</td>
+  <td>MU</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+
+<p>B. Hierarchy of Uses</p>
+<p>The hierarchy in the use tables has Land Use Groups at the top, followed by Land Use Classes, then Land Use Types. See Section 4.4, Organization of Land Uses, for a description of each land use category. See the Figure 4.8.2-1 following the written description below for an example of the use hierarchy.</p>
+<pre><code>  1.   Land Use Groups
+
+  Land Use Groups are shown in the permitted use tables as shaded rows with a label indicating the specific Land Use Group (e.g., Civic).
+
+  2.   Land Use Classes
+
+  Land Use Classes are listed below their respective Land Use Group header and are left justified in the Land Use column.
+
+  3.   Land Use Types
+
+  Land Use Types are listed below their associated Land Use Class in the Land Use column and are indented in from the Land Use Class label.
+
+  4.   Accessory Land Use
+
+  A permitted accessory land use is listed either:
+
+     a.   Directly below its associated Land Use Class or Type and is labeled “\[w\]ith \[insert use\] as an accessory use ”;
+
+     b.   At the end of the Land Use Group section when an accessory use (s) is permitted with every permitted use within a particular Land Use Group; or,
+
+     c.   As a dedicated line item in a particular Land Use Group or at the end of a Permitted Use Table when a use(s) is a permitted accessory use to permitted land uses in multiple Land Use Groups.
+</code></pre>
+<p><img alt="" src="https://export.amlegal.com/media/bc207d22edb16588f0bd0d32c4fc7186a85be661/IMAGES/0-0-0-2972.jpg" /></p>
+<p>Figure 4.8.2-1: Example of Hierarchy of Uses in the Permitted Use Tables</p>
+<h4 id="483-permitted-uses-rural-and-suburban-residential-zones">4.8.3 Permitted Uses: Rural And Suburban Residential Zones<a class="headerlink" href="#483-permitted-uses-rural-and-suburban-residential-zones" title="Permanent link">&para;</a></h4>
+<p><strong>TABLE 4.8-1: PERMITTED USES - RURAL AND SUBURBAN RESIDENTIAL ZONES</strong></p>
+<p><strong>P = Permitted Use S = Permitted as Special Exception Use</strong></p>
+<p><strong>[1] Mayor and Council Special Exception Procedure, Section 3.4.4</strong></p>
+<p><strong>[2] Zoning Examiner Special Exception Procedure, Section 3.4.3</strong></p>
+<p><strong>[3] PDSD Special Exception Procedure, Section 3.4.2</strong></p>
+<table>
+<tr>
+  <th>LAND USE</th>
+  <th>RH</th>
+  <th>SR</th>
+  <th>SH</th>
+  <th>RX-1</th>
+  <th>RX-2</th>
+  <th>USE SPECIFIC STANDARDS</th>
+</tr>
+<tr>
+  <th colspan="7">Agricultural Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Animal Production:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>General</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>SR: 4.9.2.A.1.a, 2.b,3.a<br>SH: 4.9.2.A.1.b, 2.b, 2.c, 3.b<br>RX-1: 4.9.2.A.1.a, 2.a, 2.b, 3.a</td>
+</tr>
+<tr>
+  <td>Excluding Stockyard</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.2.A.1.a, 2.b,3.b and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Commercial Stables Only</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>SR: 4.9.2.A.1.b, &amp; 2.b<br>SH: 4.9.2.A.1.b, &amp; 2.c</td>
+</tr>
+<tr>
+  <td>Hog Ranch Only</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.2.A.3.d and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Commercial Feedlot Only</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.2.D.1 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Stable or Riding School Only</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.2.A.1.b, 2.b, &amp; 4.b and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Community Garden</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>RH: 4.9.2.B and 4.9.13.I<br>SR, SH, RX-1, RX-2: 4.9.2.B</td>
+</tr>
+<tr>
+  <td>Crop Production:</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>RH: 4.9.2.C and 4.9.13.I<br>SR, SH, RX-1, RX-2: 4.9.2.C</td>
+</tr>
+<tr>
+  <td>With Food &amp; Beverage Sales as an accessory use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.9.A.2.a, 3-8 and 4.9.13.I<br>SR, SH: 4.9.9.A.1, 2.c, 3, 4, 7</td>
+</tr>
+<tr>
+  <td>General Farming</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>4.9.2.C and:<br>RH: 4.9.2.A.1.a, 2.b, 3.b and 4.9.13.I<br>SR: 4.9.2.A.1.a, 2.b, 3.a<br>SH: 4.9.2.A.1.b, 2.b, 2.c, 3.b<br>RX-1: 4.9.2.A.1.b, 2.a, 2.b, 3.a</td>
+</tr>
+<tr>
+  <td>Farmers’ Market as an accessory use to any permitted Agricultural Land Use Group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.A.12</td>
+</tr>
+<tr>
+  <th colspan="7">Civic Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Cemetery</td>
+  <td>S [1]</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.3.A.3 and 4.9.13.I<br>SH: 4.9.3.A.2</td>
+</tr>
+<tr>
+  <td>Correctional:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Supervision Facility</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>SR: 4.9.3.B.1.b, 2.a, 3.a, 4.a, 8 &amp; 9</td>
+</tr>
+<tr>
+  <td>Custodial Facility</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>SR: 4.9.3.B.1.c, 2.a, 3.a, 4.b, 8 &amp; 9</td>
+</tr>
+<tr>
+  <td>Supervision &amp; Custodial Facility</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>SR: 4.9.3.B.1.d, 2.c, 3.b, 4.b, 7, 8, &amp; 9 and shall be located in separate and distinct facilities</td>
+</tr>
+<tr>
+  <td>Cultural:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Government owned and operation only</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Nature reserve only</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Other than nature reserve or wildlife refuge</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.3.C.1 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Educational:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Elementary &amp; Secondary</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>SR, SH, RX-1, RX-2: 4.9.3.D</td>
+</tr>
+<tr>
+  <td>Elementary &amp; Secondary, projects requesting exceptions to 4.9.3.D</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>RH: 4.9.13.I</td>
+</tr>
+<tr>
+  <td>With Salvaging and Recycling as an accessory use to both P &amp; S uses</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>RH, SR, SH, RX-1, RX-2: 4.9.5.G.1 &amp; 3</td>
+</tr>
+<tr>
+  <td>Protective Service (government owned and operated only)</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>SH, RX-1, RX-2: 4.9.13.F</td>
+</tr>
+<tr>
+  <td>Religious:</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>RH: 4.9.3.F and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>With Columbarium as an accessory use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>With Salvaging and Recycling as an accessory use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>RH: 4.9.5.G.1 &amp; 3<br>SR, SH, RX-1, RX-2: 4.9.5.G.1 &amp; 3</td>
+</tr>
+<tr>
+  <th>Farmers’ Market as an accessory use to any permitted Civic Land Use Group</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>All: 4.9.9.A.12</th>
+</tr>
+<tr>
+  <th colspan="7">Commercial Services Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Administrative and Professional Office</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.A &amp; 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Alcoholic Beverage Service</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.C.1 &amp; .3 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Animal Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>General</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>SR, SH: 4.9.4.D.5</td>
+</tr>
+<tr>
+  <td>Commercial Kennel Only</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.D.6 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Veterinary Hospital Only</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.D.3 &amp; .5 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Automotive Service and Repair:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Major</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.F.6, 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Minor</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.F.1 &amp; 6 and 4.9.13.A.2 &amp; I</td>
+</tr>
+<tr>
+  <td>Commercial Recreation</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.13.A.2 &amp; I</td>
+</tr>
+<tr>
+  <td>Communications:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Wireless Communication</td>
+  <td>p</td>
+  <td>p</td>
+  <td>p</td>
+  <td>p</td>
+  <td>p</td>
+  <td>RH: 4.9.4.I.2, 3, &amp; 4.a or 5.a or 5.b and 4.9.13.I<br>SR, SH, RX-1, RX-2: 4.9.4.I.2, 3, &amp; 4.a or 5.a or 5.b</td>
+</tr>
+<tr>
+  <td>Wireless Communication, limited to wireless communication towers and antennas</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>RH: 4.9.13.I and one of the following groups: S [2] - 4.9.4.I.2, 3 &amp; 7.a or S [1] - 4.9.4.I.2, 3 &amp; 8<br>SR, SH, RX-1, RX-2: S [2] - 4.9.4.I.2, 3 &amp; 7.a or S [1] - 4.9.4.I.2, 3 &amp; 8</td>
+</tr>
+<tr>
+  <td>Radio or Television Station Only</td>
+  <td>S [1]</td>
+  <td></td>
+  <td>S[1]</td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.I.1, 4.9.13.A.2 and 4.9.13.A.I<br>SH: 4.9.4.I.1</td>
+</tr>
+<tr>
+  <td>Construction Service</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.J and 4.9.13.A.2</td>
+</tr>
+<tr>
+  <td>Day Care:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Adult Care, Maximum 10 Persons</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>RH: 4.9.4.B.1 and 4.9.13.I<br>SR, SH, RX-1, RX-2: 4.9.4.B.1</td>
+</tr>
+<tr>
+  <td>Child Care, Maximum of 30 Children</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>RH: 4.9.4.H.1-5, .6.a &amp; .7.a and 4.9.13.I<br>SR: 4.9.4.H.1-5, 6.a &amp; .7.a<br>SH &amp; RX1: 4.9.4.H.1-5, 6.a &amp; .7.b<br>RX-2: 4.9.4.H.1-5, 6.a &amp; .7.c</td>
+</tr>
+<tr>
+  <td>Child Care, Unlimited # of Children</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>RH: 4.9.13.I and one of the following groups: 4.9.4.H.1-5, 7.f. &amp; 8 or 4.9.4.H.1, .2, .8, &amp; .9<br>SR, SH, RX-1, RX-2: 4.9.4.H.1-5, 7.f. &amp; 8 or 4.9.4.H.1, .2, .8, &amp; .9</td>
+</tr>
+<tr>
+  <td>Child Care with Extended Hours (before 6:00 a.m. or after 7:00 p.m.)</td>
+  <td>S [2]</td>
+  <td>S[2]</td>
+  <td>S[2]</td>
+  <td>S[2]</td>
+  <td>S[2]</td>
+  <td>RH: 4.9.4.H.1-2 &amp; H.9 and 4.9.13.I<br>SR, SH: 4.9.4.H.1-2 &amp; H.9<br>RX-1, RX-2: 4.9.4.H. 1-2, H.8-9</td>
+</tr>
+<tr>
+  <td>Entertainment: fairground, carnival, or racetrack for the racing of animals only</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.K.5 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Financial Service, excluding non-chartered financial institutions</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.L.2 &amp; .3 and 4.9.13.A.2 &amp; I</td>
+</tr>
+<tr>
+  <td>Food Service, excluding soup kitchens</td>
+  <td>S[1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.M.3</td>
+</tr>
+<tr>
+  <td>Funeral Service, Crematorium Only</td>
+  <td>S [1]</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.N.2 and 4.9.13.I<br>SH: 4.9.4.N.1</td>
+</tr>
+<tr>
+  <td>Medical Service - Outpatient</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.O.2; 4.9.4.P.2.b, .3, &amp; .4, and 4.9.13.A.2 &amp; I</td>
+</tr>
+<tr>
+  <td>Personal Service</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.T.4 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Trade Service and Repair, Minor</td>
+  <td>S[1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Transportation Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Airport Facilities</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.Y.1 &amp; 2 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>General Aviation Airstrip</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.Y.1 - 4 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Traveler’s Accommodation, Lodging</td>
+  <td>S [1]</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>The following are permitted accessory uses to Traveler’s Accommodation, Lodging:<br>• Alcoholic Beverage Service<br>• Civic Assembly<br>• Commercial Recreation; or, Food Service</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.4.AA.1, .2, .3, .4, .5, .6.b, 7, and 4.9.13.I and the following:<br>• For Alcoholic Beverage Service, 4.9.4.C.3<br>• For Food Service, 4.9.4.M.3</td>
+</tr>
+<tr>
+  <td>The following are permitted accessory uses to Traveler’s Accommodation, Lodging:<br>• Administrative and Professional Office;<br>• Alcoholic Beverage Service;<br>• Commercial Recreation;<br>• Food Service;<br>• General Merchandise Sales; or,<br>• Personal Service</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>SR, SH, RX-1: 4.9.4.AA.1, .2, .3, .4, .5, .6.a, .6.c, 7 and the following:<br>• For Alcoholic Beverage Service, 4.9.4.C.3<br>• For Food Service, 4.9.4.M.3;</td>
+</tr>
+<tr>
+  <th colspan="7">Industrial Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Extraction</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.5.B and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Motion Picture Industry</td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>SH: 4.9.5.D and 4.9.13.C &amp; .I</td>
+</tr>
+<tr>
+  <td>Perishable Goods Manufacturing</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.5.E.2 &amp; .3 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Primary Manufacturing: Asphalt, Cement Plants only</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.5.B and 4.9.13.I</td>
+</tr>
+<tr>
+  <td colspan="7">Recreation Land Use Group With Land Use Class/Type:</td>
+</tr>
+<tr>
+  <td>Golf Course</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>SR, SH, RX-1, RX-2: 4.9.6.A.1</td>
+</tr>
+<tr>
+  <td>The following are permitted accessory uses to a Golf Course use:<br>• Alcoholic Beverage Service;<br>• Food Service;<br>• General Merchandise; Sales; or,<br>• Personal Services</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>SR, SH, RX-1, RX-2: 4.9.6.A.2 and the following:<br>For an Alcoholic Beverage Service use, 4.9.4.C.3<br>For a Food Service use, 4.9.4.M.3</td>
+</tr>
+<tr>
+  <td>Parks and Recreation</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>SR, SH, RX-1, RX-2: 4.9.13.B and C</td>
+</tr>
+<tr>
+  <td>Farmers’ Market as an accessory use to any permitted Recreation Land Use Group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.A.12</td>
+</tr>
+<tr>
+  <th colspan="7">Residential Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Family Dwelling:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Duplex</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Manufactured Housing</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>RH: 4.9.13.I<br>RX-1: 4.9.7.B.6, .8, &amp; .9<br>SR, RX-2: 4.9.7.B.6</td>
+</tr>
+<tr>
+  <td>Single-Family , Detached</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>RH: 4.9.13.I<br>RX-1: 4.9.7.B.6, .8, &amp; .9</td>
+</tr>
+<tr>
+  <td>Accessory Dwelling Unit</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.B.6, 8, &amp; 9 and 6.6.3</td>
+</tr>
+<tr>
+  <td>Home Occupation as an accessory use to any permitted Family Dwelling use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.D</td>
+</tr>
+<tr>
+  <td>Home Occupation : Travelers’ Accommodation, Lodging as an accessory to use to an permitted Family Dwelling use</td>
+  <td></td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>SR, SH, RX-1, RX-2: 4.9.7.E.10, .11, &amp; .13 and 4.9.7.H.2 &amp; .5 - .10</td>
+</tr>
+<tr>
+  <td>Flexible Lot Development</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 8.7.3</td>
+</tr>
+<tr>
+  <td>Mobile Home Dwelling</td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.13.I</td>
+</tr>
+<tr>
+  <td>With Home Occupation as an accessory use</td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>RH, SH: 4.9.7.D</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Adult Care or Physical Behavioral Health Services:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Maximum 10 Residents</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>RH: 4.9.7.J.3.a, &amp; 4 and 4.9.13.I<br>SR, SH, RX-1, RX-2: 4.9.7.J.2.a, 3.a, &amp; 4</td>
+</tr>
+<tr>
+  <td>Maximum 15 Residents</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>RH: 4.9.7.J.3.b. &amp; 4 and 4.9.13.I<br>SR, SH, RX-1, RX-2: 4.9.7.J.2.a, 3.b, &amp; 4</td>
+</tr>
+<tr>
+  <td>Unlimited Residents</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>RH: 4.9.7.J.3.d, 4 &amp; 7 and 4.9.13.I<br>SR: 4.9.7.J.2.a, 3.d, 4 &amp; 7<br>SH, RX-1, RX-2: 4.9.7.J.2.a, 3.d, 4, &amp; 7</td>
+</tr>
+<tr>
+  <th colspan="7">Retail Trade Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Artists/Artisans Workshop/Studio</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.9.B.2 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Feed store</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.13.A.2 &amp; I</td>
+</tr>
+<tr>
+  <td>Food and Beverage Sales</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.9.A.10 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Fuel dispensing</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.13.A.2 &amp; .I</td>
+</tr>
+<tr>
+  <td>General Merchandise Sales</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <th colspan="7">Storage Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Hazardous Material Storage as an accessory use to any permitted principal use in every land use group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>RH: 4.9.10.B.1 &amp; .2.a. and 4.9.13.I<br>SR, SH, RX-1, RX-2: 4.9.10.B.1 &amp; .2.a</td>
+</tr>
+<tr>
+  <th colspan="7">Utilities Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Distribution System:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>General</td>
+  <td></td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>SR, SH, RX-1, RX-2: 4.9.11.A. 1, .2, .5, .8, .9, .11, .12</td>
+</tr>
+<tr>
+  <td>Limited to Power Substation (Input Voltage of 115 Kilovolts or Greater)</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.11.A.3, .6, .7, &amp; .10 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Limited to Telephone, Telegraph, or Power Substations (Input Voltage &lt; 115 Kilovolts)</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.11.A.2 &amp; .8 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Limited to Water Pumping and Storage Facilities Serving Two or More Properties as Public, Private, or Community Utility</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RH: 4.9.11.A.4 and 4.9.13.I</td>
+</tr>
+<tr>
+  <td>Renewable Energy Generation</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S[2]</td>
+  <td>S[2]</td>
+  <td>S [2]</td>
+  <td>RH: 4.9.11.B.2, .3, .4, &amp; .5 and 4.9.13.I<br>SR, SH, RX-1, RX-2: 4.9.11.B.2, .3, .4, &amp; .5</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+
+<p>(Am. Ord. 11070, 5/14/2013; Am. Ord. 11127, 11/6/2013; Am. Ord. 11257, 4/21/2015; Am. Ord. 11328, 12/8/2015; Am. Ord. 11409, 11/9/2016; Am. Ord. 11557, 6/5/2018; Am. Ord. 11890, 12/7/2021; Am. Ord. 11996, 3/21/2023)</p>
+<h4 id="484-permitted-uses-urban-residential-zones">4.8.4 Permitted Uses: Urban Residential Zones<a class="headerlink" href="#484-permitted-uses-urban-residential-zones" title="Permanent link">&para;</a></h4>
+<p><strong>TABLE 4.8-2: PERMITTED USES - URBAN RESIDENTIAL ZONES</strong></p>
+<p><strong>P = Permitted Use S = Permitted as Special Exception Use</strong></p>
+<p><strong>[1] Mayor and Council Special Exception Procedure, Section 3.4.4</strong></p>
+<p><strong>[2] Zoning Examiner Special Exception Procedure, Section 3.4.3</strong></p>
+<p><strong>[3] PDSD Special Exception Procedure, Section 3.4.2</strong></p>
+<table>
+<tr>
+  <th>LAND USE</th>
+  <th>R-1</th>
+  <th>R-2</th>
+  <th>R-3</th>
+  <th>MH-1</th>
+  <th>MH-2</th>
+  <th>USE SPECIFIC STANDARDS</th>
+</tr>
+<tr>
+  <th colspan="7">Agricultural Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Community Garden</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.2.B</td>
+</tr>
+<tr>
+  <td>Crop Production</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.2.C</td>
+</tr>
+<tr>
+  <td>Farmers’ Market as an accessory use to any permitted Agricultural Land Use Group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.A.12</td>
+</tr>
+<tr>
+  <th colspan="7">Civic Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Cemetery</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>R-2, R-3: 4.9.3.A.1</td>
+</tr>
+<tr>
+  <td>Civic Assembly (government owned and operated only)</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Cultural Use:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Government owned and operated only</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Privately-owned and operated</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>R-1, R-2, R-3: 4.9.3.C.2 -.8</td>
+</tr>
+<tr>
+  <td>With Food Service as an accessory use to a P or S Cultural Use</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>R-1, R-2, R-3: 4.9.4.M.1 &amp; .3</td>
+</tr>
+<tr>
+  <td>With Alcoholic Beverage Sales as an accessory use to a P or S Cultural Use</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>R-1, R-2, R-3: 4.9.4.C.3 and 4.9.4.V.4 &amp; .8</td>
+</tr>
+<tr>
+  <td>With Entertainment as an accessory use to a P or S Cultural Use</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>R-1. R-2, R-3: 4.9.4.K.6</td>
+</tr>
+<tr>
+  <td>With General Merchandise Sales as an accessory use to a P or S Cultural Use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>R-1, R-2, R-3: 4.9.9.B.1 &amp; .2</td>
+</tr>
+<tr>
+  <td>Educational Use:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Elementary &amp; Secondary</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>R-1, R-2, R-3, MH-1, MH-2: 4.9.3.D.1-7</td>
+</tr>
+<tr>
+  <td>Elementary &amp; Secondary</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td></td>
+</tr>
+<tr>
+  <td>With Salvaging &amp; Recycling as an accessory use to both P &amp; S uses</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>R-1, R-2, R-3, MH-1, MH-2: 4.9.5.G.1 &amp; 3</td>
+</tr>
+<tr>
+  <td>Postal Service (government owned and operated only)</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Protective Service (government owned and operated only)</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>R-2, R-3, MH-1, MH-2: 4.9.13.F</td>
+</tr>
+<tr>
+  <td>Religious Use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>With Columbarium as an accessory use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>With Salvaging &amp; Recycling as an accessory use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>R-1, R-2, R-3, MH-1, MH-2: 4.9.5.G. 1 &amp; 3</td>
+</tr>
+<tr>
+  <td>Farmers’ Market as an accessory use to any permitted Civic Land Use Group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.A.12</td>
+</tr>
+<tr>
+  <th colspan="7">Commercial Services Land Use Group</th>
+</tr>
+<tr>
+  <td>Administrative and Professional Office (government owned and operated only)</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Communications:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Wireless Communication</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>R-1, R-2, R-3, MH-1, MH-2: 4.9.4.I.2, .3, &amp; .4.a or 5.a or 5.b</td>
+</tr>
+<tr>
+  <td>Wireless Communication, limited to wireless communication towers and antennas</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>R-1, R-2, R-3, MH-1, MH-2: S[2] - 4.9.4.I.2, .3 &amp; .7.a or S[1] - 4.9.4.I.2, .3 &amp;.8</td>
+</tr>
+<tr>
+  <td>Day Care:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Adult Care</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>R-1, R-2, MH-1: 4.9.4.B.1<br>R-3: 4.9.4.B.2</td>
+</tr>
+<tr>
+  <td>Child Care, maximum 30 children</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>R-1, R-2: 4.9.4.H.1-5, .6.a &amp; .7.d.</td>
+</tr>
+<tr>
+  <td>Child Care, maximum 100 children</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>R-3: 4.9.4.H.1-.5, .6.b, &amp; .7.e</td>
+</tr>
+<tr>
+  <td>Child Care, unlimited number of children</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>R-1, R-2: 4.9.4.H.1-5, .6.c, 7.f, &amp; .8<br>R-3: 4.9.4.H.1-5, .6.c, 7.g, &amp; .8</td>
+</tr>
+<tr>
+  <td>Child Care with extended hours (before 6:00 am or after 7:00 pm)</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>R-1, R-2, R-3: 4.9.4.H.1, .2, .8, &amp; .9</td>
+</tr>
+<tr>
+  <td>Medical Services, excluding blood donor center</td>
+  <td></td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>R-2: 4.9.4.O.2 and 4.9.4.P.1, 2.a, 3, &amp; .4<br>R-3: 4.9.4.O.2 and 4.9.4.P.1, 2.a, .3, &amp; .4</td>
+</tr>
+<tr>
+  <th>Transportation Services, Air Carrier, Helipad as an accessory use to a Medical Service, Major Use</th>
+  <th></th>
+  <th>S [2]</th>
+  <th>S [2]</th>
+  <th></th>
+  <th></th>
+  <th>R-2: 4.9.4.Q.2<br>R-3: 4.9.4.Q.2</th>
+</tr>
+<tr>
+  <th colspan="7">Recreation Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Parks and Recreation</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>R-1, R-2, MH-1, MH-2: 4.9.13.B &amp; C<br>R-3: 4.9.13.B and C</td>
+</tr>
+<tr>
+  <td>Farmers’ Market as an accessory use to any permitted Recreation Land Use Group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.A.12</td>
+</tr>
+<tr>
+  <th colspan="7">Residential Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Family Dwelling:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Duplex</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>R-2: 4.9.7.B.6, .8 &amp; .9<br>R-3: 4.9.7.B.6<br>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Manufactured Housing</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>R-1: For 1 unit, 4.9.7.B.5 - .8;<br>for 2 units (min. 10,000 sf lot size required), 4.9.7.B<br>R-2: 4.9.7.B.6, .8, &amp; .9<br>R-3: 4.9.7.B.6<br>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Multifamily Development</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>R-2: 4.9.7.B.6, .8, &amp; .9<br>R-3: 4.9.7.B.6<br>For 3-4 Units: 4.9.7.B.12 &amp; .14</td>
+</tr>
+<tr>
+  <td>Accessory Dwelling Unit</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.B.6, .8, &amp; .12 and 6.6.3</td>
+</tr>
+<tr>
+  <td>Single-family, Attached</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>R-2: 4.9.7.B.6, .8, &amp; .9<br>R-3: 4.9.7.B.6.<br>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Single-family , Detached</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>R-1: For 1 unit, 4.9.7.B.5 - .9; for 2 units (min. 10,000 sf lot size required),<br>4.9.7.B.1 - .9, &amp; .10<br>R-2: 4.9.7.B.6, .8, &amp; .9<br>R-3: 4.9.7.B.6<br>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Middle Housing</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>R-1:4.9.7.B.4-.6, .8, &amp; .9<br>R-2: 4.9.7.B.6, .8, &amp; .9<br>R-3: 4.9.7.B.6<br>All: 4.9.7.B.11- .14</td>
+</tr>
+<tr>
+  <td>Home Occupation as an accessory use to any permitted Family Dwelling use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.D</td>
+</tr>
+<tr>
+  <td>Home Occupation : Travelers’ Accommodation, Lodging as an accessory use to any permitted Family Dwelling use</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>R-1: 4.9.7.E.10, .11, &amp; .13 and 4.9.7.H.2 &amp; .5 - .11<br>R-2: 4.9.7.E.10, .11, &amp; .13 and 4.9.7.H.3 &amp; .5 - .11</td>
+</tr>
+<tr>
+  <td>Flexible Lot Development</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 8.7.3</td>
+</tr>
+<tr>
+  <td>Group Dwelling</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>R-3: 4.9.7.B.6</td>
+</tr>
+<tr>
+  <td>Mobile Home Dwelling</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>With Home Occupation as an accessory use</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>MH-1, MH-2: 4.9.7.D</td>
+</tr>
+<tr>
+  <td>Mobile Home Park:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>The following accessory uses in Mobile Home Parks with 100 spaces or more:<br>• Day Care, Child;<br>• Food and Beverage Sales (limited to a delicatessen or snack bar);<br>• General Merchandise Sales;<br>• Personal Service (limited to a coin-operated laundry or pick-up station for dry cleaning);<br>• Travelers’ Accommodation; Campsite; and,<br>• Vehicle Rental and Sales</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>MH-2:<br>For Day Care, Child use, 4.9.4.H.1-5;<br>• For Travelers’ Accommodation, Campsite, 4.9.4.Z;<br>• For Food and Beverage Sales, General Merchandise Sales, and Personal Service, 4.9.7.I.3<br>• Vehicle Rental and Sales, 4.9.7.I.4</td>
+</tr>
+<tr>
+  <td>With Travelers’ Accommodation, Campsite as an accessory use</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>MH-1, MH-2: 4.9.4.Z</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Adult Care or Physical and Behavioral Health Services:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Maximum 10 Residents</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>R-1, R-2: 4.9.7.J. 2.a, 3.a, 4<br>R-3, MH-1, MH-2: 4.9.7.J. 3.a, .4</td>
+</tr>
+<tr>
+  <td>Unlimited # Residents</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>R-2: 4.9.7.J.2.a, .3.d, .4, .7<br>R-3: 4.9.7.J.2.b, 3.d, .4, .8</td>
+</tr>
+<tr>
+  <td>Maximum 15 Residents</td>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td>R-1, R-2: 4.9.7.J.2.a, .3.b, .4<br>MH-1: 4.9.7.J.3.b, .4</td>
+</tr>
+<tr>
+  <td>Unlimited # Residents</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td>R-1: 4.9.7.J.2.a, 3.d, .4, .8<br>MH-1: 4.9.7.J.3.d, .4, .8</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Adult Rehabilitation Service or Shelter Care:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Maximum 15 Residents</td>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>R-2: 4.9.7.J.1, .2.a, .3.b, .4, 9</td>
+</tr>
+<tr>
+  <td>Maximum 20 Residents</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>R-3: 4.9.7.J.1, .2.b, .3.c, .4, 9</td>
+</tr>
+<tr>
+  <td>Unlimited # Residents</td>
+  <td></td>
+  <td>S[2]</td>
+  <td>S[2]</td>
+  <td></td>
+  <td></td>
+  <td>R-2: 4.9.7.J.1, 2.a, 3.d, .4, 8<br>R-3: 4.9.7.J.1, 2.b, 3.d, .4, .8</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Child Rehabilitation Service (maximum 10 Residents)</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>R-2: 4.9.7.J.1, 2.a, .3.a, .4<br>R-3: 4.9.7.J.1, 2.b, .3.a, .4</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Shelter Care for Victims of Domestic Violence:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Maximum 10 Residents</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>R-2: 4.9.7.J.1, 2.a, 3.a, 4 &amp; 9</td>
+</tr>
+<tr>
+  <td>Maximum 20 Residents</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>R-3: 4.9.7.J.1, 2.b, 3.c, 4 &amp; 9</td>
+</tr>
+<tr>
+  <th colspan="7">Storage Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Hazardous Material Storage as an accessory use to any permitted principal use in every land use group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>R-1, R-2, R-3, MH-1, MH-2: 4.9.10.B.1 &amp; .2.a</td>
+</tr>
+<tr>
+  <th colspan="7">Utilities Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Distribution System</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>R-1, R-2, R-3, MH-1, MH-2: 4.9.11.A.1, .2, .5, .8, .9, .11, .12</td>
+</tr>
+<tr>
+  <td>Renewable Energy Generation</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>R-1, R-2, R-3 MH-1, MH-2: 4.9.11.B.2, .3, .4, .5</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+
+<p>(Am. Ord. 11070, 5/14/2013; Am. Ord. 11127, 11/6/2013; Am. Ord. 11257, 4/21/2015; Am. Ord. 11328, 12/8/2015; Am. Ord. 11409, 11/9/2016; Am. Ord. 11557, 6/5/2018; Am. Ord. 11608, passed 12/18/2018; Am. Ord. 11890, 12/7/2021; Am. Ord. 11996, 3/21/2023; Am. Ord. 12219, 12/16/2025)</p>
+<h4 id="485-permitted-uses-office-zones">4.8.5 Permitted Uses: Office Zones<a class="headerlink" href="#485-permitted-uses-office-zones" title="Permanent link">&para;</a></h4>
+<p><strong>TABLE 4.8-3: PERMITTED USES - OFFICE ZONES</strong></p>
+<p><strong>P = Permitted Use S = Permitted as Special Exception Use</strong></p>
+<p><strong>[1] Mayor and Council Special Exception Procedure, Section 3.4.4</strong></p>
+<p><strong>[2] Zoning Examiner Special Exception Procedure, Section 3.4.3</strong></p>
+<p><strong>[3] PDSD Special Exception Procedure, Section 3.4.2</strong></p>
+<table>
+<tr>
+  <th>LAND USE</th>
+  <th>O-1</th>
+  <th>O-2</th>
+  <th>O-3</th>
+  <th>USE SPECIFIC STANDARDS</th>
+</tr>
+<tr>
+  <th colspan="5">Agricultural Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <th>Community Garden</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>All: 4.9.2.B</th>
+</tr>
+<tr>
+  <th>Urban Farm</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>All: 4.9.2.E</th>
+</tr>
+<tr>
+  <th colspan="5">Civic Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Cemetery</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>O-3: 4.9.3.A.1 and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Civic Assembly</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.13.J</td>
+</tr>
+<tr>
+  <td>Cultural Use:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Government owned and operated</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Privately owned and operated</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>O-1, O-2: 4.9.3.C.2 - 8 and 4.9.13.J<br>O-3: 4.9.3.C.2 - 8 and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>With Food Service as an accessory use</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>O-1, O-2, O-3: 4.9.4.M.1, .3</td>
+</tr>
+<tr>
+  <td>With Alcoholic Beverage Service as an accessory use</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>O-1, O-2, O-3: 4.9.4.C.3 &amp; 4.9.4.V.4, .8</td>
+</tr>
+<tr>
+  <td>With Entertainment as an accessory use</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>O-1, O-2, O-3: 4.9.4.K.6</td>
+</tr>
+<tr>
+  <td>With General Merchandise Sales as an accessory use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-1, O-2, O-3: 4.9.9.B.1 &amp; .2</td>
+</tr>
+<tr>
+  <td>Educational Use:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Elementary and Secondary</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.3.D and 4.9.13.J<br>O-3: 4.9.3.D and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Elementary and Secondary</td>
+  <td></td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Postsecondary Institution</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.13.J<br>O-3: 4.9.3.E and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>With Salvaging &amp; Recycling as an accessory use to any P or S Educational Use</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2, O-3: 4.9.5.G.1&amp;3</td>
+</tr>
+<tr>
+  <td>Postal Service (government owned and operated only)</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Protective Service (government owned and operated only)</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Religious Use</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.13.J<br>O-3: 4.9.13.K</td>
+</tr>
+<tr>
+  <td>With Columbarium as an accessory use</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>With Salvaging &amp; Recycling as an accessory use</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2, O-3, MU, OCR-1, OCR-2: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <th colspan="5">Commercial Services Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Administrative and Professional Office</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-1: 4.9.4.R and 4.9.13.J<br>O-2: 4.9.13.J<br>O-3: 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Communications</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Wireless Communication</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-1, O-2: 4.9.13.J and 4.9.4.I.2, .3, &amp; .4.a or 5.a or 5.b<br>O-3: 4.9.13.K and 4.9.4.I.2, .3, &amp; .4.a or 5.a or 5.b</td>
+</tr>
+<tr>
+  <td>Wireless Communication, limited to wireless communication towers and antennas</td>
+  <td>S [see use specific standard]</td>
+  <td>S [see use specific standard]</td>
+  <td>S [see use specific standard]</td>
+  <td>O-1, O-2: 4.9.13.J and one of the following groups: S[2] - 4.9.4.I.2, .3, &amp; .7.a or S[1] - 4.9.4.I.2, .3, &amp; .8<br>O-3: 4.9.13.K and one of the following groups: S[2] - 4.9.4.I.2, .3, &amp; .7.a or S[1] - 4.9.4.I.2, .3, &amp; .8</td>
+</tr>
+<tr>
+  <td>Day Care:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Adult</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.13.J</td>
+</tr>
+<tr>
+  <td>Child:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Maximum 30 children</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.4.H.1-5, 6.a &amp; 7.d and 4.9.13.J<br>O-3: 4.9.4.H.1-4, 6.a &amp; 7.e and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Maximum 100 children</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>O-3: 4.9.4.H. 1-5, 6.b &amp; 7.g and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Child:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Unlimited # of children</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>O-3: 4.9.4.H.1, .2, &amp; .9 and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>With extended hours (before 6:00 am or after 7:00 pm)</td>
+  <td></td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>O-2: 4.9.4.H.1, .2, &amp; .9 and 4.9.13.J<br>O-3: 4.9.4.H.1-5, .6.c, .7.g, &amp; .8 and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Medical Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Extended Healthcare</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.13.J.1 &amp; .3<br>O-3: 4.9.13.K.1</td>
+</tr>
+<tr>
+  <td>Major</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.4.P.1 and 4.9.13.J<br>O-3: 4.9.4.P.1 and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Food Service; General Merchandise Sales; or Personal Service as an accessory use to a Medical Service, Major use</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.4.P.1, 4.9.4.Q.1, and 4.9.13.J<br>O-3: 4.9.4.P.1, 4.9.4.Q.1, and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Transportation Services, Air Carrier, Helipad as an accessory use to a Medical Service, Major Use</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.4.Q.2<br>O-3: 4.9.4.Q.2</td>
+</tr>
+<tr>
+  <td>Outpatient (excluding blood donor centers)</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-1: 4.9.4.O.1, 4.9.4.P.1, 4.9.4.R, and 4.9.13.J<br>O-2: 4.9.4.O.1, 4.9.4.P.1, and 4.9.13.J<br>O-3: 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Research and Product Development</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>O-3: 4.9.4.U and 4.9.13.K</td>
+</tr>
+<tr>
+  <th colspan="5">Recreation Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Parks and Recreation</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.13.J<br>O-3: 4.9.13.K</td>
+</tr>
+<tr>
+  <th colspan="5">Residential Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Family Dwelling:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Duplex</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Manufactured Housing</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Multifamily Development</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>For 3-4 Units: 4.9.7.B.12 &amp; .14</td>
+</tr>
+<tr>
+  <td>Single-family , Attached or Detached</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Middle Housing</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.B.11 - .14</td>
+</tr>
+<tr>
+  <td>Accessory Dwelling Unit</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.B.12 and 6.6.3</td>
+</tr>
+<tr>
+  <td>Any Family Dwelling with a Home Occupation as an accessory use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-1, O-2, 0-3: 4.9.7.D</td>
+</tr>
+<tr>
+  <td>Flexible Lot Development</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-1, O-2, O-3: 8.7.3</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Adult Care or Physical and Behavioral Health Services:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Maximum 10 Residents</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-1, O-2: 4.9.13.J<br>O-3: 4.9.7.J.3.a, &amp; .4 and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Maximum 15 Residents</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>O-1: 4.9.7.J.3.b &amp; .4 and 4.9.13.J</td>
+</tr>
+<tr>
+  <td>Unlimited # Residents</td>
+  <td>S [2]</td>
+  <td></td>
+  <td>P</td>
+  <td>O-1: 4.9.7.J.3.d, .4 &amp; .8 and 4.9.13.J<br>O-3: 4.9.7.J.3.d, .4, &amp; .8 and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Adult Rehabilitation Service or Shelter Care:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Maximum 15 Residents</td>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td>O-2: 4.9.7.J.1, .2.b, 3.b, .4, &amp; .9 and 4.9.13.J</td>
+</tr>
+<tr>
+  <td>Unlimited # Residents</td>
+  <td></td>
+  <td>S [2]</td>
+  <td>P</td>
+  <td>O-2: 4.9.7.J.1, 2.b., 3.d, 4, &amp; .8 and 4.9.13.J<br>O-3(P): 4.9.7.J.1, .3.d, .4, .6, &amp; .8 and 4.9.13.K</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>O-3(S): 4.9.7.J.1, 3.d, .4, &amp; .8 and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Child Rehabilitation Services, Maximum 10 Residents</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.7.J.1, 2.b, 3.a, &amp; .4 and 4.9.13.J<br>O-3: 4.9.7.J.1, 3.a, &amp; .4 and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Shelter Care for Victims of Domestic Violence</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-2: 4.9.7.J.1, 2.b, 3.b, .4, &amp; .7 and 4.9.13.J<br>O-3: 4.9.7.J.1, 3.c, &amp; .4 and 4.9.13.K</td>
+</tr>
+<tr>
+  <th colspan="5">Retail Trade Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <th>Farmers’ Market as an accessory use to any permitted principal use in every land use group</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>All: 4.9.9.A.12.a-.e</th>
+</tr>
+<tr>
+  <th colspan="5">Storage Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Hazardous Material Storage as an accessory use to any permitted principal use in every land use group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>O-1, O-2, O-3: 4.9.10.B.1 &amp; 2.a or .2.e and 4.9.13.K</td>
+</tr>
+<tr>
+  <th colspan="5">Utilities Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Distribution System</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>O-1, O-2: 4.9.11.A.1, .5, &amp; .9 and 4.9.13.J<br>O-3: 4.9.11.A.1, .5, &amp; .9 and 4.9.13.K</td>
+</tr>
+<tr>
+  <td>Renewable Energy Generation</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>O-1, O-2: 4.9.11.B. 2, .3, .4, &amp; .5 and 4.9.13.J<br>O-3: 4.9.11.B. 2, .3, .4, &amp; .5 and 4.9.13.K</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+
+<p>(Am. Ord. 11070, 5/14/2013; Am. Ord. 11235, 1/21/2015; Am. Ord. 11257, 4/21/2015; Am. Ord. 11328, 12/8/2015; Am. Ord. 11608, passed 12/18/2018; Am. Ord. 11890, 12/7/2021; Am. Ord. 11996, 3/21/2023; Am. Ord. 12219, 12/16/2025)</p>
+<h4 id="486-permitted-uses-commercial-and-mixed-use-zones">4.8.6 Permitted Uses: Commercial And Mixed Use Zones<a class="headerlink" href="#486-permitted-uses-commercial-and-mixed-use-zones" title="Permanent link">&para;</a></h4>
+<p><strong>TABLE 4.8-4: PERMITTED USES - COMMERCIAL AND MIXED USE ZONES</strong></p>
+<p><strong>P = Permitted Use S = Permitted as Special Exception Use</strong></p>
+<p><strong>[1] Mayor and Council Special Exception Procedure, Section 3.4.4</strong></p>
+<p><strong>[2] Zoning Examiner Special Exception Procedure, Section 3.4.3</strong></p>
+<p><strong>[3] PDSD Special Exception Procedure, Section 3.4.2</strong></p>
+<table>
+<tr>
+  <th>LAND USE</th>
+  <th>C-1</th>
+  <th>C-2</th>
+  <th>C-3</th>
+  <th>OCR-1</th>
+  <th>OCR-2</th>
+  <th>USE SPECIFIC STANDARDS</th>
+</tr>
+<tr>
+  <th colspan="7">Agricultural Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <th>Community Garden</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>All: 4.9.2.B</th>
+</tr>
+<tr>
+  <th>Urban Farm</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>All: 4.9.2.E</th>
+</tr>
+<tr>
+  <th colspan="7">Civic Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Cemetery</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.3.A.1 &amp; .5 and 4.9.13.O</td>
+</tr>
+<tr>
+  <td>Civic Assembly</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Correctional Use:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Custodial Facility</td>
+  <td></td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>C-2 &amp; C-3: 4.9.3.B.1.a, 2.b, 3.b, 6, 7 &amp; 8<br>OCR-1, OCR-2: 4.9.3.B.1.a, 2.b, 3.b, 6, 7 &amp; 8</td>
+</tr>
+<tr>
+  <td>Supervision Facility</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-2 &amp; C-3: 4.9.3.B.1.a, 2.b,3.a, 4.d, 6 &amp; 8<br>OCR-1, OCR-2: 4.9.3.B.1.a, 2.b, 3.a, 6 &amp; 8</td>
+</tr>
+<tr>
+  <td>Cultural Use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Educational Use:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Elementary and Secondary</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.3.D.1 - 7 and 4.9.13.O<br>C-2, C-3: 4.9.3.D.1 - 7<br>OCR-1, OCR-2: 4.9.3.D</td>
+</tr>
+<tr>
+  <td>Elementary and Secondary</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>C-1: 4.9.13.O</td>
+</tr>
+<tr>
+  <td>Instructional School</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.13.O</td>
+</tr>
+<tr>
+  <td>Postsecondary Institution</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.3.E and 4.9.13.O<br>C-2, C-3: 4.9.3.E</td>
+</tr>
+<tr>
+  <td>With Salvaging and Recycling as an accessory use to both P and S Educational Uses</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1, C-2, C-3, OCR-1, OCR-2: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <td>Membership Organization</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.13.O</td>
+</tr>
+<tr>
+  <td>Postal Service (government owned and operated only)</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Protective Service (government owned and operated only)</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Religious Use:</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.13.O</td>
+</tr>
+<tr>
+  <td>With Columbarium as an accessory use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>With Salvaging and Recycling as an accessory use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1, C-2, C-3, OCR-1, OCR-2: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <th colspan="7">Commercial Services Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Administrative and Professional Office</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.13.O<br>C-2: 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Alcoholic Beverage Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Excluding a Large Bar</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-2: 4.9.13.P<br>OCR-1, OCR-2: 4.9.4.C.3</td>
+</tr>
+<tr>
+  <td>Large Bar</td>
+  <td></td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>C-2: 4.9.4.C.2 and 4.9.13.P<br>C-3: 4.9.4.C.2<br>OCR-1, OCR-2: 4.9.4.C.2</td>
+</tr>
+<tr>
+  <td>With a Microbrewery as an accessory use to any P or S Alcoholic Beverage Service Use</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-2, C-3, OCR-1, OCR-2: 4.9.5.E.6, 7, &amp; 8</td>
+</tr>
+<tr>
+  <td>Animal Service</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>General</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.4.D.1, .2, .3, &amp; .4 and 4.9.13.O or 4.9.4.D.7 &amp; 4.9.4.D.10-.15<br>C-2: 4.9.4.D.1, .2, .3, &amp; .4 and 4.9.13.P or 4.9.4.D.7 &amp; 4.9.4.D.10-.15<br>C-3: 4.9.4.D.1, .2, .3, .4 or 4.9.4.D.7</td>
+</tr>
+<tr>
+  <td>General</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>C-1, C-2, &amp; C-3: 4.9.4.D.9 - .15</td>
+</tr>
+<tr>
+  <td>Boarding as an Accessory Use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-1, C-2, &amp; C-3: 4.9.4.D.3, D.8 &amp; 4.9.4.D.15</td>
+</tr>
+<tr>
+  <td>Artisan Residence</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.4.E.1, .2, .3, .4, &amp; .5 and 4.9.13.O<br>C-2: 4.9.4.E.1, .2, .3, .4, &amp; .5 and 4.9.13.P<br>C-3: 4.9.4.E.1, .2, .3, .4, &amp; .5</td>
+</tr>
+<tr>
+  <td>Automotive:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Major Service and Repair (excluding bodywork and paint-booths)</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2: 4.9.13.E</td>
+</tr>
+<tr>
+  <td>Minor Service and Repair</td>
+  <td>S [2]</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.4.F.2, .3, .4, &amp; .5 and 4.9.13.O<br>C-2: 4.9.13.E</td>
+</tr>
+<tr>
+  <td>Billboard</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2, C-3: 4.9.4.G &amp; Standards of Chapter 3 of the Tucson Code</td>
+</tr>
+<tr>
+  <td>Buildings and Ground Maintenance</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Commercial Recreation</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.13.O<br>C-2: 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Communications:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Wireless Communication</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.13.O and 4.9.4.I.2, .3, &amp; .4.a or 5.a or 5.b<br>C-2: 4.9.13.P and one of the following groups: 4.9.4.I.1 &amp; 4.9.13.E or 4.9.4.I.2 &amp; .3 &amp; .4.a or 5.a or 5.b<br>C-3: 4.9.4.I.1 or 4.9.4.I.2, .3, &amp; .4.a or 5.a or 5.b<br>OCR-1, OCR-2: 4.9.4.I.2, .3, &amp; .4.a or 5.a or 5.b</td>
+</tr>
+<tr>
+  <td>Wireless Communication, limited to communication towers and antennas</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>C-1: 4.9.13.O and one of the following groups: S[3] - 4.9.4.I.2, .3, &amp; 6.b or S[2] - 4.9.4.I.2, .3, 7.a or S[1] - 4.9.4.I.2, .3, .8<br>C-2: 4.9.13.P and one of the following groups: S[3] - 4.9.4.I.2, .3, &amp; 6.a or S[2] - 4.9.4.I.2, .3, &amp; 7.b or S[1] - 4.9.4.I.2, .3, &amp; .8<br>C-3: S[3] - 4.9.4.I.2, .3, &amp; .5.a or S[2] - 4.9.4.I.2, .3, &amp; .7.b or S[1] - 4.9.4.I.2, .3, &amp; .8<br>OCR-1, OCR-2: S[3] - 4.9.4.I.2, .3, &amp; .6.a or S[2] - 4.9.4.I.2, .3, .7.b or S[1] - 4.9.4.I.2, .3, .8</td>
+</tr>
+<tr>
+  <td>Construction Service</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2: 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Day Care</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.13.O</td>
+</tr>
+<tr>
+  <td>Entertainment</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Excluding Large Dance Hall</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.4.C.3 and 4.9.13.O<br>C-2: 4.9.4.K.1, .2, .3, .4, 4.9.4.C.3, and 4.9.13.E and 4.9.13.P<br>C-3: 4.9.4.K.1, .2, .3, .4, 4.9.4.C.3, and 4.9.13.E<br>OCR-1, OCR-2: 4.9.4.K.1, .2, .3, .4; 4.9.4.C.3</td>
+</tr>
+<tr>
+  <td>Large Dance Hall</td>
+  <td></td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>C-2: 4.9.4.C.2 and 4.9.13.P<br>C-3: 4.9.4.C.2<br>OCR-1, OCR-2: 4.9.4.C.2</td>
+</tr>
+<tr>
+  <td>Financial Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Excluding non-chartered institutions</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-3: 4.9.4.L.3<br>C-1: 4.9.4.L.1 &amp; .3 and 4.9.13.O<br>C-2: 4.9.4.L.3, 4.9.13.E, and 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Non-chartered Institution</td>
+  <td></td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>C-2: 4.9.4.L.4 and 4.9.13.P<br>C-3: 4.9.4.L.4</td>
+</tr>
+<tr>
+  <td>Food Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Food Court</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.4.M.1 &amp; 5-7 and 4.9.13.O<br>C-2: 4.9.4.M.1, .6, &amp; .7 and 4.9.13.P<br>C-3, OCR-1, &amp; OCR-2: 4.9.4.M.1., .6, &amp; .7</td>
+</tr>
+<tr>
+  <td>Excluding Soup Kitchens</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.4.M.1 &amp; 5 and 4.9.13.O<br>C-2: 4.9.4.M.1 and 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Soup Kitchens</td>
+  <td></td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>C-2, C-3, OCR-1, OCR-2: 4.9.4.M.4</td>
+</tr>
+<tr>
+  <td>With Alcoholic Beverage Service as an accessory use to a Food Service use</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.4.V.1, 3, &amp; 5-9, 4.9.4.C.3, and 4.9.13.O</td>
+</tr>
+<tr>
+  <td>With a Microbrewery as an accessory use to a Food Service</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.4.M.1 &amp; 4.9.5.E.6, .7, .8</td>
+</tr>
+<tr>
+  <td>Funeral Service</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2: 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Medical Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Extended Healthcare</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.13.O<br>OCR-2: 4.9.13.E</td>
+</tr>
+<tr>
+  <td>Major</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.13.O</td>
+</tr>
+<tr>
+  <td>Transportation Services, Air Carrier, Helipad as an accessory use to a Medical Service, Major Use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1, C-2, C-3, OCR-1, OCR-2: 4.9.4.Q.2</td>
+</tr>
+<tr>
+  <td>Outpatient, excluding blood donor centers</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.4.O.2 and 4.9.13.O<br>C-2: 4.9.4.O.2 and 4.9.13.P<br>C-3: 4.9.4.O.2</td>
+</tr>
+<tr>
+  <td>Outpatient, limited to blood donor centers</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>C-1: 4.9.4.O.3 and 4.9.13.O<br>C-2: 4.9.4.O.3 and 4.9.13.P<br>C-3, OCR-1, OCR-2:: 4.9.4.O.3</td>
+</tr>
+<tr>
+  <td>Parking</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Personal Service</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.4.T.1 and 4.9.13.O<br>C-2: 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Research and Product Development</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.13.O</td>
+</tr>
+<tr>
+  <td>Technical Service</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.4.W.1 and 4.9.13.O<br>C-2: 4.9.4.W.2 and 4.9.13.P<br>C-3: 4.9.4.W.2</td>
+</tr>
+<tr>
+  <td>Trade Service and Repair:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Major (includes automotive bodywork &amp; paint booths)</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-3: 4.9.4.X.1</td>
+</tr>
+<tr>
+  <td>Minor</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.4.X.2 and 4.9.13.O<br>C-2: 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Transportation Service</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Airport Authority</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>C-1, C-2: 4.9.13.Q.5</td>
+</tr>
+<tr>
+  <td>Land Carrier</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-2: 4.9.13.E</td>
+</tr>
+<tr>
+  <td>Travelers Accommodation, Lodging</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.13.O</td>
+</tr>
+<tr>
+  <td>With Alcoholic Beverage Service as an accessory use</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.4.C.3 and 4.9.4.AA.2, .4, .7, .8, .9, .10, &amp; .11</td>
+</tr>
+<tr>
+  <td>With Alcoholic Beverage Service as an accessory use</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.4.C.3 and 4.9.4.AA.2, .4, .7, .8, .9, &amp; .11</td>
+</tr>
+<tr>
+  <th colspan="7">Additional Permitted Accessory Uses</th>
+</tr>
+<tr>
+  <td>The following uses are permitted accessory uses to any permitted Commercial Services Uses:<br>• General Manufacturing;<br>• Heavy Equipment Manufacturing;<br>• Perishable Goods Manufacturing (limited to baked goods and confectionary products);<br>• Precision Manufacturing; or<br>• Primary Manufacturing</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-2, C-3: 4.9.5.C.9<br>OCR-1: 4.9.5.C.9</td>
+</tr>
+<tr>
+  <td>The following are permitted accessory uses to any permitted Commercial Uses:<br>• General Manufacturing;<br>• Heavy Equipment Manufacturing; or,<br>• Perishable Goods Manufacturing (limited to baked goods and confectionary products manufacturing only)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>OCR-2: 4.9.5.C.9</td>
+</tr>
+<tr>
+  <td>Perishable Goods Manufacturing as an accessory use to any permitted Commercial Services use</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.5.E.4, .5, &amp; .8</td>
+</tr>
+<tr>
+  <td>Salvaging and Recycling as an accessory use to any permitted Commercial Services use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1, C-2, C-3: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <th colspan="7">Industrial Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Craftwork</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2: 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Household Goods Donation Center Only</td>
+  <td>S [2]</td>
+  <td>S [3]</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.5.G.2, .6 -12, 4.9.13.A.2, .B-D, and 4.9.13.O<br>C-2: 4.9.5.G.2, &amp; .6 - .12, 4.9.13.A.2, 4.9.13.B-D, and 4.9.13.P<br>C-3, OCR-1, OCR-2: 4.9.5.G.2, .6 -11; 4.9.13.C &amp; .D</td>
+</tr>
+<tr>
+  <td>Processing and Cleaning</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2: 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Salvaging and Recycling</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2: 4.9.5.G.2, .3, &amp; .5 and 4.9.13.P<br>C-3: 4.9.5.G.2, .3, &amp; .5</td>
+</tr>
+<tr>
+  <th colspan="7">Recreation Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Golf Course</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.6.A.1 and 4.9.13.O<br>C-2, C-3: 4.9.6.A.1</td>
+</tr>
+<tr>
+  <td>Parks and Recreation</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td colspan="7">Residential Land Use Group With Land Use Class/Type:</td>
+</tr>
+<tr>
+  <td>Family Dwelling:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Duplex</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Manufactured Housing</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Multifamily Development</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>For 3-4 Units: 4.9.7.B.12 &amp; .14</td>
+</tr>
+<tr>
+  <td>Single-family , Attached or Detached</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Middle Housing</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.B.11 - .14</td>
+</tr>
+<tr>
+  <td>Accessory Dwelling Unit</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.7.B.12 and 6.6.3</td>
+</tr>
+<tr>
+  <td>with Home Occupation as an accessory use to any permitted Family Dwelling</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1, C-2, C-3, OCR-1, OCR-2: 4.9.7.D</td>
+</tr>
+<tr>
+  <td>with General Farming as an accessory use to any permitted Family Dwelling use</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2, C-3: 4.9.2.A.1.a, &amp; .3.a and 4.9.2.B.1</td>
+</tr>
+<tr>
+  <td>Flexible Lot Development</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-1, C-2, C-3: 8.7.3</td>
+</tr>
+<tr>
+  <td>Group Dwelling</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Residential Care Services, Adult Care or Physical and Behavioral Health Services: Unlimited # of Residents</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.7.J.3.d, .4, &amp; .8 and 4.9.13.O<br>C-2: 4.9.7.J.3.d, .4, &amp; .8<br>C-3, OCR-1, OCR-2: 4.9.7.J.3.d &amp; .4</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Adult Rehabilitation or Shelter Care:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Unlimited # Residents</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.7.J.1, 3.d, .4, .6, &amp; .8 and 4.9.13.O<br>C-2, C-3: 4.9.7.J.1, 3.d, .4, .6, &amp; .8</td>
+</tr>
+<tr>
+  <td>Unlimited # Residents</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>P</td>
+  <td></td>
+  <td>C-1: 4.9.7.J.1, 3.d, .4, &amp; .8 and 4.9.13.O<br>C-2, C-3: 4.9.7.J.1, 3.d, .4, &amp; .8<br>OCR-1: 4.9.7.J.1, .3.d, .4, .6, .8</td>
+</tr>
+<tr>
+  <td>Unlimited # Residents</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>OCR-1, OCR-2(S): 4.9.7.J.1, 3.d, .4, .6, &amp; .8</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Rehabilitation Service - Children’s Facility (maximum 10 residents)</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.7.J.1, 3.a, &amp; .4 and 4.9.13.O<br>C-2, C-3, OCR-1, OCR-2: 4.9.7.J.1, 3.a, &amp; .4</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Shelter Care for Victims of Domestic Violence</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.7.J.1, 3.c, &amp; .4 and 4.9.13.O<br>C-2, C-3, OCR-1, OCR-2: 4.9.7.J.1, 3.c, &amp; .4</td>
+</tr>
+<tr>
+  <th colspan="7">Restricted Adult Activities Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Adult Commercial Services, Recreation, or Retail Trade</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-2: 4.9.8, 4.9.13.P<br>C-3, OCR-1, OCR-2: 4.9.8</td>
+</tr>
+<tr>
+  <th colspan="7">Retail Trade Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Construction Material Sales</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Food and Beverage Sales:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Farmers’ Market only</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.A.12.a-.d</td>
+</tr>
+<tr>
+  <td>Excluding Large Retail Establishment</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.13.O</td>
+</tr>
+<tr>
+  <td>Large Retail Establishment</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S[1]</td>
+  <td>S[1]</td>
+  <td>C-1: 4.9.9.D and 4.9.13.O<br>C-2, C-3, OCR-1, OCR-2: 4.9.9.D</td>
+</tr>
+<tr>
+  <td>General Merchandise Sales, excluding Large Retail Establishment</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.9.B.3 and 4.9.13.O<br>C-2, C-3: 4.9.9.B.1<br>OCR-1, OCR-2: 4.9.9.B.1</td>
+</tr>
+<tr>
+  <td>Large Retail Establishment</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>C-1: 4.9.9.D and 4.9.13.O<br>C-2, C-3, OCR-1, OCR-2: 4.9.9.D</td>
+</tr>
+<tr>
+  <td>With Automotive Minor Service and Repair as an accessory use to automotive fuel sales</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.4.F.7 and 4.9.13.O</td>
+</tr>
+<tr>
+  <td>Heavy Equipment Sales</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2, C-3: 4.9.9.C</td>
+</tr>
+<tr>
+  <td>Marijuana Facility:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Designated Caregiver Cultivation Location</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2, C-3: 4.9.9.E.2 &amp; 3</td>
+</tr>
+<tr>
+  <td>Dispensary</td>
+  <td></td>
+  <td>[1]</td>
+  <td>[1]</td>
+  <td></td>
+  <td></td>
+  <td>C-2, C-3: 4.9.9.E.1</td>
+</tr>
+<tr>
+  <td>Dispensary Off-site Cultivation Location</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2, C-3: 4.9.9.E.2</td>
+</tr>
+<tr>
+  <td>Qualifying Patient Cultivation Location</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2, C-3: 4.9.9.E.4</td>
+</tr>
+<tr>
+  <td>Smoke Shop</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.H</td>
+</tr>
+<tr>
+  <td>Swap Meets and Auctions</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>S [3]</td>
+  <td>S [3]</td>
+  <td>C-2, C-3, OCR-1, OCR-2: 4.9.9.F</td>
+</tr>
+<tr>
+  <td>Vehicle Rental and Sales</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-2, C-3, OCR-1, OCR-2: 4.9.9.G.1&amp; .2</td>
+</tr>
+<tr>
+  <td>Farmers’ Market as an accessory use to any permitted principal use in every land use group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.A.12.a-.e</td>
+</tr>
+<tr>
+  <td colspan="7">Additional Permitted Accessory Uses</td>
+</tr>
+<tr>
+  <td>The following are permitted as an accessory uses to any permitted Retail Trade Uses:<br>• General Manufacturing;<br>• Heavy Equipment Manufacturing;<br>• Perishable Good Manufacturing (limited to baked goods and confectionary products);<br>• Precision Manufacturing;<br>• Primary Manufacturing</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-2, C-3, OCR-1: 4.9.5.C.9</td>
+</tr>
+<tr>
+  <td>The following are permitted accessory uses to any permitted Retail Trade Uses:<br>• General Manufacturing;<br>• Heavy Equipment Manufacturing; or,<br>• Perishable Goods Manufacturing (limited to baked goods and confectionary products manufacturing only)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>OCR-2: 4.9.5.C.9</td>
+</tr>
+<tr>
+  <td>Craftwork as an accessory use to any permitted Retail Trade uses</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.5.A</td>
+</tr>
+<tr>
+  <td>Perishable Goods Manufacturing as an accessory to any permitted Retail Trade Uses</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>C-1: 4.9.5.E.4, .5, &amp; .8</td>
+</tr>
+<tr>
+  <td>Salvaging and Recycling as an accessory use to any permitted Retail Trade uses</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <th colspan="7">Storage Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Commercial Storage</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-2, C-3, OCR-1, OCR-2: 4.9.10.A</td>
+</tr>
+<tr>
+  <td>Hazardous Material Storage as an accessory use to any permitted principal use in every land use group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1, C-2: 4.9.10.B.1, .2.a or .2.e<br>C-3, OCR-1, OCR-2: 4.9.10.B.1 &amp; .2.c or .2.e</td>
+</tr>
+<tr>
+  <td>Personal Storage</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.10.C and 4.9.13.O<br>C-2, C-3, OCR-1, OCR-2: 4.9.10.C.3 &amp; .6</td>
+</tr>
+<tr>
+  <th colspan="7">Utilities Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Distribution System</td>
+  <td>S [2]</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.11.A.1, .5, &amp; .9 and 4.9.13.O<br>C-2,C-3, OCR-1, OCR-2: 4.9.11.A.1, .5, &amp; .9</td>
+</tr>
+<tr>
+  <td>Renewable Energy Generation</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-1: 4.9.11.B and 4.9.13.O<br>C-2, C-3: 4.9.11.B.1, .2, .3, &amp; .5<br>OCR-1, OCR-2: 4.9.11.B</td>
+</tr>
+<tr>
+  <td></td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S[2]</td>
+  <td>S[2]</td>
+  <td></td>
+</tr>
+<tr>
+  <td colspan="7">Wholesaling Use Group With Land Use Class/Type:</td>
+</tr>
+<tr>
+  <td>Business Equipment Supply and Wholesaling</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2: 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Construction/Heavy Equipment Wholesaling</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2: 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Food and Beverage Wholesaling</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>C-2: 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Additional Permitted Accessory Uses</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>The following are permitted as accessory uses to permitted Wholesaling uses:<br>• General Manufacturing;<br>• Heavy Equipment Manufacturing;<br>• Perishable Goods Manufacturing (limited to baked goods and confectionary products);<br>• Precision Manufacturing; or,<br>• Primary Manufacturing.</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>C-2, C-3, OCR-1: 4.9.5.C.9</td>
+</tr>
+<tr>
+  <td>The following are permitted accessory uses to any permitted Commercial Uses:<br>• General Manufacturing;<br>• Heavy Equipment Manufacturing; or,<br>• Perishable Goods Manufacturing (limited to baked goods and confectionary products manufacturing only)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>OCR-2: 4.9.5.C.9</td>
+</tr>
+<tr>
+  <td>All Commercial Services in the C-1 Zone may provide one drive-through service lane unless otherwise provided.</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+
+<p>(Am. Ord. 11070, 5/14/2013; Am. Ord. 11127, 11/6/2013; Am. Ord. 11171, 5/20/2014; Am. Ord. 11235, 1/21/2015; Am. Ord. 11257, 4/21/2015; Am. Ord. 11328, 12/8/2015; Am. Ord. 11557, 6/5/2018; Am. Ord. 11577, 8/8/2018; Am. Ord. 11608, 12/18/2018; Am. Ord. 11609, 12/18/2018; Am. Ord. 11828, 4/6/2021; Am. Ord. 11890, 12/7/2021; Am. Ord. 11978, 12/20/2022; Am. Ord. 11996, 3/21/2023; Am. Ord. 12057, 11/14/2023; Am. Ord. 12060, 11/28/2023; Am. Ord. 12219, 12/16/2025)</p>
+<h4 id="487-permitted-uses-industrial-zones">4.8.7 Permitted Uses: Industrial Zones<a class="headerlink" href="#487-permitted-uses-industrial-zones" title="Permanent link">&para;</a></h4>
+<p><strong>TABLE 4.8-5: PERMITTED USES - INDUSTRIAL ZONES *</strong></p>
+<p><strong>P = Permitted Use S = Permitted as Special Exception Use</strong></p>
+<p><strong>[1] Mayor and Council Special Exception Procedure, Section 3.4.4</strong></p>
+<p><strong>[2] Zoning Examiner Special Exception Procedure, Section 3.4.3</strong></p>
+<p><strong>[3] PDSD Special Exception Procedure, Section 3.4.2</strong></p>
+<p><strong>*Any Land Use Class not permitted or a Special Exception Use in any other zone , or permitted in the I-2 zone , may be permitted in the I-2 zone and shall comply with the dimensional standards determined to be most similar to the proposed use.</strong></p>
+<table>
+<tr>
+  <th>LAND USE</th>
+  <th>P-I</th>
+  <th>I-1</th>
+  <th>I-2</th>
+  <th>USE SPECIFIC STANDARDS</th>
+</tr>
+<tr>
+  <td>Agricultural Land Use Group With Land Use Class/Type:</td>
+  <td></td>
+  <td></td>
+  <td>*</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Community Garden</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.2.B</td>
+</tr>
+<tr>
+  <td>Stockyard Operation</td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td>I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Urban Farm</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.2.E</td>
+</tr>
+<tr>
+  <td>Civic Land Use Group With Land Use Class/Type:</td>
+  <td></td>
+  <td></td>
+  <td>*</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Civic Assembly</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>I-1: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Correctional Use:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Custodial Facility</td>
+  <td></td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>I-1: 4.9.3.B.1.a, .2.b, .3.b, .6, .7 &amp; .8 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Jail or Prison</td>
+  <td></td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>I-1, I-2: 4.9.3.B.1.e, .2.d, .3.c, .4.c, .5.a, .6, .7 &amp; .8, and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Jail or Prison</td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td>I-2: 4.9.3 B.4.b, .5, .6, .7, .8 &amp; .10 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Cultural Use</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Educational Use:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Elementary and Secondary, Limited to Grades 9 -12</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Instructional or Postsecondary Institution</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>P-I: 4.9.3.E</td>
+</tr>
+<tr>
+  <td>With Salvaging and Recycling as an accessory use to an Educational Use</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>P-I: 4.9.5.G.1 &amp; .3<br>I-1: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <td>Membership Organization</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>I-1: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Postal Service</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>I-1: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Protective Service (government owned and operated only)</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Religious Use</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>I-1: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>With Salvaging and Recycling as an accessory use</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td>I-1: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <td>Commercial Services Land Use Group With Land Use Class/Type:</td>
+  <td></td>
+  <td></td>
+  <td>*</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Administrative and Professional Office</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Alcoholic Beverage Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Excluding Large Bar</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.13.P<br>I-1, I-2: 4.9.4.C.3 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Large Bar</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>P-I: 4.9.4.C.2 and 4.9.13.P<br>I-1, I-2: 4.9.4.C.2 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>With a Microbrewery as an accessory use to a P or S Alcoholic Beverage Service use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.5.E.6, .7, &amp; .8</td>
+</tr>
+<tr>
+  <td>Animal Service</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.4.D.1, .2, .3 &amp; .4 and 4.9.13.P<br>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Automotive Minor or Major Service and Repair, excluding bodywork or paint-booths</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.13.E<br>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Billboard</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.4.G, Tucson Code, Ch. 3 Standards, and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Buildings and Ground Maintenance</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Commercial Recreation</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Communications:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Radio or Television Station only</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.4.I.1 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Wireless Communication</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.13.Q and 4.9.4.I.2, .3, &amp; .4.a or 5.a. or 5.b.</td>
+</tr>
+<tr>
+  <td>Wireless Communication</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>P-I, I-1, I-2: 4.9.13.Q and one of the following groups: S[3] - 4.9.4.I.2, .3, and .6.a or .6.b or S[2] - 4.9.4.I.2, .3, &amp; .7.b or S[1] - 4.9.4.I.2, .3, &amp; .8</td>
+</tr>
+<tr>
+  <td>Construction Service</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Day Care</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Entertainment:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Excluding Dance Halls</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.4.K.1, .2, .3, .4, 4.9.4.C.3, 4.9.13.E, and 4.9.13.P<br>I-1, I-2: 4.9.4.K.1, .2, .3, .4, 4.9.4.C.3, and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Dance Hall</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>P-I: 4.9.4.C.2 and 4.9.13.P<br>I-1, I-2: 4.9.4.C.2 &amp; .4 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Financial Service, excluding non-chartered institutions</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.4.L.3, 4.9.13.Q, and drive-through services are permitted as an outdoor activity<br>I-1, I-2: 4.9.4.L.3 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Food Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Food Court</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>4.9.4.M.1., .6, &amp; .7</td>
+</tr>
+<tr>
+  <td>Excluding Soup Kitchen</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.13.Q and drive-through or drive-in services are permitted as an outdoor activity</td>
+</tr>
+<tr>
+  <td>With Alcoholic Beverage Service as an accessory use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.4.V.1-2 and 4.9.4.C.3</td>
+</tr>
+<tr>
+  <td>Soup Kitchen</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>P</td>
+  <td>P-I: 4.9.4.M.4<br>I-1, I-2: 4.9.4.M.4 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Funeral Service</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.13.P</td>
+</tr>
+<tr>
+  <td>Medical Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Extended Healthcare</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Major</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Transportation Services, Air Carrier, Helipad as an accessory use to a Medical Service, Major Use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-1, I-1, I-2: 4.9.4.Q.2</td>
+</tr>
+<tr>
+  <td>Outpatient:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Excluding blood donor centers</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Limited to blood donor centers</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>P-I: 4.9.4.O.3 and 4.9.13.P<br>I-1 &amp; I-2: 4.9.4.O.3 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Parking</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Personal Service</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>P-I, I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Research and Product Development</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.5.C.5, .6, &amp; .8 and 4.9.13.Q<br>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Technical Service</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Trade Service and Repair:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Major (includes auto body shops/paint-booths)</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.4.X.1 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Minor</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.13.P<br>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Transportation Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Air Carrier</td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td>I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Land Carrier</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Airport Authority</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-1, I-1, I-2: 4.9.13.Q.5</td>
+</tr>
+<tr>
+  <td>Travelers Accommodation, Lodging</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>With Alcoholic Beverage Service as an accessory use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.4.V.1 &amp; .2 and 4.9.4.C.3</td>
+</tr>
+<tr>
+  <th colspan="5">Additional Permitted Accessory Uses</th>
+</tr>
+<tr>
+  <td>Salvaging and Recycling is a permitted accessory use to any permitted Commercial Service Use in the specified zones</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <th>Industrial Land Use Group With Land Use Class/Type:</th>
+  <td></td>
+  <td></td>
+  <td>*</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Craftwork</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.5.C.2, .4, .5, .6 &amp; .8 and 4.9.13.Q<br>I-1: 4.9.5.C.2, .6, .7, &amp; .8 and 4.9.13.Q<br>I-2: 4.9.5.C and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Extraction</td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td>I-2: 4.9.5.B and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>General Manufacturing</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.5.C.2, .4, .5, .6, &amp; .8 and 4.9.13.Q<br>I-1: 4.9.5.C.2, .6, .7, &amp; .8 and 4.9.13.Q<br>I-2: 4.9.5.C and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Manufacturing:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Hazardous Material</td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td>I-2: 4.9.5.C .1-8 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Heavy Equipment</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>I-2: 4.9.5.C .1-8 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Motion Picture Industry</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.5.C.1,.2, .4, .5, .6, .8, 4.9.5.D.1 and 4.9.13.Q<br>I-1: 4.9.5.C.1,.2, 5-6,.8, 4.9.5.D.1 and 4.9.13.Q<br>I-2: 4.9.5.C .1-8 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Perishable Goods Manufacturing</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1 (P), P-I: 4.9.5.C.2, .4, .5, .6, .8, 4.9.5.E.1 &amp; .2 and 4.9.13.Q<br>I-2 (P): 4.9.5.C.1-8, 4.9.5.E.1-2 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>S [1]</td>
+  <td>I-1 (S): 4.9.5.C and 4.9.13.Q<br>I-2 (S): 4.9.5.C and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Precision Manufacturing</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.5.C.2, .4, .5, .6, &amp; .8 and 4.9.13.Q<br>I-1: 4.9.5.C.2, .5, .6, .7, &amp; .8 and 4.9.13.Q<br>I-2: 4.9.5.C.1-8 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Primary Manufacturing</td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td>I-2: 4.9.5.C .1-8 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Processing and Cleaning</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.5.C.2, .4, .5, .6 &amp; .8 and 4.9.13.Q<br>I-1: 4.9.5.C.2, .5, .6, .7, &amp; .8 and 4.9.13.Q<br>I-2: 4.9.5.C .1-8 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Refining</td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td>I-2: 4.9.5.C and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Salvaging and Recycling</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.5.C.2, 4.9.5.G.2, .4, &amp; .5 and 4.9.13.Q<br>I-1: 4.9.5.G.2 &amp; .4 and 4.9.13.Q<br>I-2 (P): 4.9.5.G.2 &amp; .4 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td>I-2 (S): 4.9.5.C.1 - 8 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Limited to Household Goods Donation Center</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-2: 4.9.5.G.2, .6, 4.9.13.C, 4.9.13.D, and 4.9.13.Q</td>
+</tr>
+<tr>
+  <th colspan="5">Additional Permitted Accessory Uses</th>
+</tr>
+<tr>
+  <td>The following uses are permitted as an accessory use to any permitted use in the Industrial Use Group:<br>• Construction Material Sales;<br>• Food and Beverage Sales;<br>• General Merchandise Sales; or<br>• Heavy Equipment Sales</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>P-I: 4.9.5.C.8 &amp; .10</td>
+</tr>
+<tr>
+  <td>Salvaging and Recycling is a permitted accessory use to any permitted Industrial Service Use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <th>Recreation Land Use Group With Land Use Class/Type:</th>
+  <td></td>
+  <td></td>
+  <td>*</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Golf Course</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td>I-1: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Residential Land Use Group With Land Use Class/Type:</td>
+  <td></td>
+  <td></td>
+  <td>*</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Artist Studio/Residence</td>
+  <td></td>
+  <td>S[3]</td>
+  <td></td>
+  <td>I-1: 4.9.7.A and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Family Dwelling or Mobile Home as an accessory use to a permitted use in any Land Use Group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.7.C</td>
+</tr>
+<tr>
+  <td>Residential Care Services:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Rehabilitation Service or Shelter Care (unlimited # residents)</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>P-I: 4.9.7.J.1, 3.d, .4, .5, &amp; .6 and 4.9.13.Q<br>I-1: 4.9.7.J.1, 3.d, .4, .5, .6, and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Rehabilitation Service or Shelter Care (unlimited # residents)</td>
+  <td>S [2]</td>
+  <td></td>
+  <td>S [2]</td>
+  <td>P-I, I-2: 4.9.7.J.1, 3.d, .4, &amp; .5 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Shelter Care, Victims of Domestic Violence</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>P-I: 4.9.7.J.1, 3.c, &amp; .4 and 4.9.13.Q<br>I-1: 4.9.7.J.1, 3.c, .4, and 4.9.13.Q</td>
+</tr>
+<tr>
+  <th>Shelter Care, Children and Teenagers who need full-time supervision</th>
+  <th></th>
+  <th>P</th>
+  <th></th>
+  <th>I-1: 4.9.7.J.1, 3.d, .4, .5, .10 and 4.9.13.Q</th>
+</tr>
+<tr>
+  <th>Shelter Care, Children and Teenagers who need full-time supervision</th>
+  <th></th>
+  <th>S [2]</th>
+  <th></th>
+  <th>I-1: 4.9.7.J.1, 3.d, .4, .5, and 4.9.13.Q</th>
+</tr>
+<tr>
+  <th>Restricted Adult Activities Land Use Class With Land Use Type:</th>
+  <td></td>
+  <td></td>
+  <td>*</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Adult: Commercial Services, Industrial, Recreation, or Retail Trade</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td>I-1: 4.9.8.A and 4.9.13.Q</td>
+</tr>
+<tr>
+  <th>Retail Trade Land Use Group With Land Use Class/Type:</th>
+  <td></td>
+  <td></td>
+  <td>*</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Construction Material Sales</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Food and Beverage Sales:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Farmers’ Market only</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.A.12.a-.d</td>
+</tr>
+<tr>
+  <td>Excluding Large Retail Establishments</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Large Retail Establishment</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>P-I: 4.9.9.D<br>I-1, I-2: 4.9.9.D and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>General Merchandise Sales:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Excluding Large Retail Establishments</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.9.B.1<br>I-1, I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Large Retail Establishment</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>S [1]</td>
+  <td>P-I: 4.9.9.D<br>I-1, I-2: 4.9.9.D and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Heavy Equipment Sales</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.9.C and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Marijuana Cultivation Location:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Designated Caregiver Cultivation Location</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.9.E.2 &amp; .3 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Dispensary Off-Site Cultivation Location</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.9.E.2 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Qualifying Patient Cultivation Location</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.9.E.4 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Marijuana Dispensary Off-Site Manufacturing Location</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.9.E.2 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Swap Meets and Auctions</td>
+  <td>S [3]</td>
+  <td>S [3]</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.9.F and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Auctions only</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>I-1, I-2: 4.9.9.F and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Vehicle Rental and Sales</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.9.G.2, &amp; .3 and 4.9.13.Q<br>I-1, I-2: 4.9.9.G.1 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Farmers’ Market as an accessory use to any permitted principal use in every land use group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.A.12.a-.e</td>
+</tr>
+<tr>
+  <th colspan="5">Additional Permitted Accessory Uses</th>
+</tr>
+<tr>
+  <td>Salvaging and Recycling is permitted as an accessory use to any permitted use in the Retail Trade Use Group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <th>Storage Land Use Group With Land Use Class/Type:</th>
+  <td></td>
+  <td></td>
+  <td>*</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Commercial Storage</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.10.A, 4.9.5.C.8, and 4.9.13.Q<br>I-1, 1-2: 4.9.10.A and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Hazardous Material Storage</td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td>I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Hazardous Material Storage as an accessory use to any permitted principal use in every land use group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.10.B.1 &amp; .2.a<br>I-1, I-2: 4.9.10.B.1 &amp; 2.d</td>
+</tr>
+<tr>
+  <td>Personal Storage</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.10.C. &amp; 4.9.13.Q<br>I-1, I-2: 4.9.10.C.3 &amp; .6 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <th colspan="5">Additional Permitted Accessory Uses</th>
+</tr>
+<tr>
+  <td>The following uses are permitted as an accessory use to any permitted use in the Storage Use Group:<br>• Construction Material Sales;<br>• Food and Beverage Sales;<br>• Heavy Equipment Sales; or,<br>• General Merchandise Sales</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>P-I: 4.9.5.C.8 &amp; .10</td>
+</tr>
+<tr>
+  <th>Utilities Land Use Group With Land Use Class/Type:</th>
+  <td></td>
+  <td></td>
+  <td>*</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Distribution System</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1: 4.9.11.A.1, .2, &amp; .4 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Renewable Energy Generation</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I, I-1, I-2: 4.9.11.B.2, .3, &amp; .5 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Sanitation System</td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td>I-2: 4.9.5.C. &amp; 4.9.11.C and 4.9.13.Q</td>
+</tr>
+<tr>
+  <th>Wholesaling Land Use Group With Land Use Class/Type:</th>
+  <td></td>
+  <td></td>
+  <td>*</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Business Supply &amp; Equipment Wholesaling</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.5.C.8 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Construction/Heavy Equipment Wholesaling</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.5.C.8 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Food and Beverage Wholesaling</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P-I: 4.9.5.C.8 and 4.9.13.Q</td>
+</tr>
+<tr>
+  <td>Hazardous Material Wholesaling</td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td>I-2: 4.9.13.Q</td>
+</tr>
+<tr>
+  <th colspan="5">Additional Permitted Accessory Uses</th>
+</tr>
+<tr>
+  <td>The following uses are permitted as an accessory use to any permitted use in the Wholesaling Use Group:<br>• Construction Material Sales;<br>• Food and Beverage Sales;<br>• Heavy Equipment Sales;<br>• General Merchandise Sales</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>P-I: 4.9.5.C.8 &amp; .10</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+
+<p>(Am. Ord. 11070, 5/14/2013; Am. Ord. 11127, 11/6/2013; Am. Ord. 11171, 5/20/2014; Am. Ord. 11201, 9/23/2014; Am. Ord. 11257, 4/21/2015; Am. Ord. 11328, 12/8/2015; Am. Ord. 11446, 4/5/2017; Am. Ord. 11557, 6/5/2018; Am. Ord. 11577, 8/8/2018; Am. Ord. 11608, 12/18/2018; Am. Ord. 11828, 4/6/2021; Am. Ord. 11996, 3/21/2023; Am. Ord. 12060, 11/28/2023)</p>
+<h4 id="488-permitted-uses-special-use-zones-1-os-ir-p-rv">4.8.8 Permitted Uses: Special Use Zones (1) - OS, IR, P &amp; RV<a class="headerlink" href="#488-permitted-uses-special-use-zones-1-os-ir-p-rv" title="Permanent link">&para;</a></h4>
+<p><strong>TABLE 4.8-6: PERMITTED USES - SPECIAL USE ZONES (1): OS, IR, P, &amp; RV ZONES</strong></p>
+<p><strong>P = Permitted Use S = Permitted as Special Exception Use</strong></p>
+<p><strong>[1] Mayor and Council Special Exception Procedure, Section 3.4.4</strong></p>
+<p><strong>[2] Zoning Examiner Special Exception Procedure, Section 3.4.3</strong></p>
+<p><strong>[3] PDSD Special Exception Procedure, Section 3.4.2</strong></p>
+<table>
+<tr>
+  <th>LAND USE</th>
+  <th>OS</th>
+  <th>IR</th>
+  <th>P</th>
+  <th>RV</th>
+  <th>USE SPECIFIC STANDARDS</th>
+</tr>
+<tr>
+  <th colspan="6">Agricultural Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Animal Production:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Excluding a Stockyard</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.2.A.1.a, .2.b, .3.b, &amp; .3.c and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Hog Ranch</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.2.A.3.d and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Stable or Riding School</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.2.A.2.b, &amp; .4 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Community Garden</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.2.B</td>
+</tr>
+<tr>
+  <td>Crop Production</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.2.C and 4.9.13.H<br>P, RV: 4.9.2.C</td>
+</tr>
+<tr>
+  <td>With Food and Beverage Sales as an accessory use</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.9.A.2.a &amp; 3-9 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>General Farming</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>IR: 4.9.2.A.1.a, 2.b, 3.b, &amp; .3.c, 4.9.2.C, and 4.9.13.H<br>P, RV: 4.9.2.C</td>
+</tr>
+<tr>
+  <td>Stockyard Operation:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Commercial Feedlot</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.2.D.1 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Livestock Auction Yard</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.2.D.2 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Urban Farm</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>P, RV: 4.9.2.E</td>
+</tr>
+<tr>
+  <th colspan="6">Civic Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Cultural Use:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Limited to Nature Reserve or Wildlife Refuge</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Other than Nature Reserve or Wildlife Refuge</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.3.C.1 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Educational Use, Elementary and Secondary</td>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>With Salvaging and Recycling as an accessory use</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.5.G.1 &amp; .3 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Protective Service (government owned and operated only)</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.13.F &amp; H</td>
+</tr>
+<tr>
+  <td>Religious Uses</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>With Columbarium as an accessory use</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>With Salvaging and Recycling as an accessory use</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.5.G.1 &amp; .3 and 4.9.13.H</td>
+</tr>
+<tr>
+  <th colspan="6">Commercial Services Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Administrative and Professional Office</td>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.4.A.1 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Animal Services, limited to Veterinary Hospital or Commercial Kennel</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.4.D.5 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Commercial Recreation</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Communications:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Wireless Communication</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.13.H and 4.9.4.I.2, .3, .4.a or .5.a or .5.b</td>
+</tr>
+<tr>
+  <td>Wireless Communication, limited to wireless communication towers and antennas</td>
+  <td></td>
+  <td>S [see use specific standards]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.13.H and one of the following groups: S[2] - 4.9.4.I.2, .3 &amp; 7.a. or S[1] - 4.9.4.I.2, .3 &amp; .8</td>
+</tr>
+<tr>
+  <td>Radio or Television Station Only</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.4.I.1, 4.9.13.A.2, and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Construction Service</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.4.J, 4.9.13.A.2, and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Entertainment, Carnival or Racetrack for the racing of animals</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.4.K.5 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Medical Services - Outpatient, excluding blood donor centers</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.4.O.3, 4.9.4.P.2.b, .3, &amp; .4, 4.9.13.A.2, and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Parking</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td>P: 4.9.4.S</td>
+</tr>
+<tr>
+  <td>Transportation Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Air Carrier, Airport Facilities</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.4.Y.1 &amp; 2 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Air Carrier, General Aviation Strip</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.4.Y.1 - 4 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Air Carrier, Ultra-light Airstrip</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Air Carrier, Ultra-light Flight Park</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.4.Y.2 &amp; 3 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Travelers’ Accommodation:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Campsite</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>RV: 4.9.13.L</td>
+</tr>
+<tr>
+  <td>Campsite of over 200 spaces with the following uses as an accessory use :<br>• Adult Care Services;<br>• Day Care;<br>• Family Dwelling;<br>• Food and Beverage Sales (limited to a delicatessen, snack bar, or food store only);<br>• General Merchandise Sales;<br>• Mobile Home Dwelling;<br>• Park and Recreation; or,<br>• Personal Services (limited to a coin-operated laundry or pick-up station for dry cleaning only)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>RV: 4.9.7.I.3 and 4.9.13.L</td>
+</tr>
+<tr>
+  <td>Lodging</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>The following as accessory uses to a Travelers’ Accommodation, Lodging use:<br>• Alcoholic Beverage Service;<br>• Civic Assembly;<br>• Commercial Recreation; or<br>• Food Service</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.4.AA.1-.5, .6.b, &amp; .7 and the following:<br>• For Alcoholic Beverage Service, 4.9.4.C.3;<br>• For Food Service, 4.9.4.M.3.</td>
+</tr>
+<tr>
+  <th colspan="6">Industrial Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Extraction</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.5.B.1 &amp; .2 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Perishable Goods Manufacturing</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.5.E.2 &amp; .3 and 4.9.13.H</td>
+</tr>
+<tr>
+  <th colspan="6">Recreation Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Open Space</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>OS: 4.9.13.G</td>
+</tr>
+<tr>
+  <td>Parks and Recreation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <th colspan="6">Residential Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Family Dwelling:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Manufactured Housing</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Single-Family , Detached</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Middle Housing</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.7.B.11 - .14</td>
+</tr>
+<tr>
+  <td>With Home Occupation as an accessory use to any Family Dwelling</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.7.D and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Mobile Home Dwelling</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <th colspan="6">Retail Trade Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Food and Beverage Sales (Farmers’ Markets only)</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.A.12.a-.d</td>
+</tr>
+<tr>
+  <td>General Merchandise Sales:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Artists/Artisan Workshop/Studio only</td>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.9.B.2 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Feed Store only</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.13.A.2 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Farmers’ Market as an accessory use to any permitted principal use in every land use group</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.A.12.a-.d</td>
+</tr>
+<tr>
+  <th colspan="6">Storage Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Hazardous Material Storage as an accessory use to any permitted principal use in every land use group</td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td>IR: 4.9.10.B.1, .2.a and 4.9.13.H<br>RV: 4.9.10.B.1 &amp; .2.a and 4.9.13.L</td>
+</tr>
+<tr>
+  <th colspan="6">Utilities Land Use Group WithLand Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Distribution System:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Limited to Power Substations with Input of 115 Kilovolts or more</td>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.11.A.3, .6, .7, &amp; .10 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Limited to Telephone, Telegraph, or Power Substations with Input voltage less than 115 Kilovolts</td>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.11.A.2 &amp; .8 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Limited to Water pumping and storage facilities operated as part of a system serving 2 or more properties as a private, public, or community utility</td>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>IR: 4.9.11.A.4 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td>Renewable Energy Generation</td>
+  <td></td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td></td>
+  <td>IR, P : 4.9.11.B.2, .3, .4, &amp; .5 and 4.9.13.H</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+
+<p>(Am. Ord. 11070, 5/14/2013; Am. Ord. 11171, 5/20/2014; Am. Ord. 11257, 4/21/2015; Am. Ord. 11328, 12/8/2015; Am. Ord. 11996, 3/21/2023; Am. Ord. 12219, 12/16/2025)</p>
+<h4 id="489-permitted-uses-special-use-zones-2-nc-rvc-mu">4.8.9 Permitted Uses: Special Use Zones (2) - NC, RVC, &amp; MU<a class="headerlink" href="#489-permitted-uses-special-use-zones-2-nc-rvc-mu" title="Permanent link">&para;</a></h4>
+<p><strong>TABLE 4.8-7: PERMITTED USES - SPECIAL USE ZONES (2): NC, RVC, AND MU ZONES</strong></p>
+<p><strong>P = Permitted Use S = Permitted as Special Exception Use</strong></p>
+<p><strong>[1] Mayor and Council Special Exception Procedure, Section 3.4.4</strong></p>
+<p><strong>[2] Zoning Examiner Special Exception Procedure, Section 3.4.3</strong></p>
+<p><strong>[3] PDSD Special Exception Procedure, Section 3.4.2</strong></p>
+<table>
+<tr>
+  <th>LAND USE</th>
+  <th>NC</th>
+  <th>RVC</th>
+  <th>MU</th>
+  <th>USE SPECIFIC STANDARDS</th>
+</tr>
+<tr>
+  <th colspan="5">Agricultural Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Animal Production:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Excluding Commercial Stables</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>MU: 4.9.2.A.1.a, 1.c, 2.a, 2.b, &amp; 3.a</td>
+</tr>
+<tr>
+  <td>Commercial Stables Only</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.2.A.1.b, .2.b, and 4.9.5.C.6</td>
+</tr>
+<tr>
+  <th>Community Garden</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>All: 4.9.2.B</th>
+</tr>
+<tr>
+  <th>Urban Farm</th>
+  <th>P</th>
+  <th>P</th>
+  <th>P</th>
+  <th>All: 4.9.2.E</th>
+</tr>
+<tr>
+  <th colspan="5">Civic Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Cemetery</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Civic Assembly</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Correctional Use:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Custodial Facility</td>
+  <td></td>
+  <td></td>
+  <td>S [1]</td>
+  <td>MU: 4.9.3.B.1.a, 2.b, 3.b, 6, 7 &amp; 8 and 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Supervision Facility</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>MU: 4.9.3.B.1.a, 2.b, 3.a, 6 &amp; 8</td>
+</tr>
+<tr>
+  <td>Cultural Use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>NC, RVC: Government owned and operated only and 4.9.13.M</td>
+</tr>
+<tr>
+  <td>Educational Use:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Elementary and Secondary</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>NC: 4.9.3.D.1 - 7 and 4.9.13.M</td>
+</tr>
+<tr>
+  <td></td>
+  <td>S [2]</td>
+  <td></td>
+  <td></td>
+  <td>NC: 4.9.13.M</td>
+</tr>
+<tr>
+  <td>Postsecondary Institution</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>With Salvaging and Recycling as an accessory use to both P and S Educational Uses</td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td>NC: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <td>Postal Service</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>NC, RVC: Government owned and operated only and 4.9.13.M</td>
+</tr>
+<tr>
+  <td>Protective Service</td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+  <td>NC, RVC: Government owned and operated only and 4.9.13.M</td>
+</tr>
+<tr>
+  <td>Religious Use</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>RVC: 4.9.13.N</td>
+</tr>
+<tr>
+  <td>With Columbarium as an accessory use</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>With Salvaging and Recycling as an accessory use</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>RVC, MU: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <th colspan="5">Commercial Services Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Administrative and Professional Office</td>
+  <td>P</td>
+  <td>P</td>
+  <td>S [2]</td>
+  <td>NC: 4.9.13.M<br>RVC: 4.9.13.N<br>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Alcoholic Beverage Service, excluding Large Bars</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>With Microbrewery as an accessory use</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>MU: 4.9.5.E.6, .7, &amp; .8</td>
+</tr>
+<tr>
+  <td>Animal Service</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Artisan Residence</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>NC: 4.9.4.E.1, .2, .3, .4, &amp; .5 and 4.9.13.M</td>
+</tr>
+<tr>
+  <td>Automotive:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Major Service and Repair (excluding bodywork and paint-booths)</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Minor Service and Repair</td>
+  <td></td>
+  <td>S [1]</td>
+  <td>S [2]</td>
+  <td>RVC: 4.9.4.F.5 and 4.9.13.N<br>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Buildings and Ground Maintenance</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Commercial Recreation</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Communications:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Wireless Communication</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>NC: 4.9.13.M and 4.9.4.I.2, .3, &amp; .4.a or .5.a or .5.b<br>RVC: 4.9.13.N and 4.9.4.I.2, .3, &amp; .4.a or .5.a or .5.b<br>MU: 4.9.4.I.2, .3, &amp; .4.a or .5.a or .5.b</td>
+</tr>
+<tr>
+  <td>Wireless Communication, limited to wireless communication towers and antennas</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>S [see use specific standards]</td>
+  <td>NC: 4.9.13.M and one of the following groups: S[2] - 4.9.4.I.2, .3, &amp; .7.a; or, S[1] - 4.9.4.I.2, .3, &amp; .8<br>RVC: 4.9.13.N and 4.9.4.I.2, .3, &amp; 5.a or 5.b<br>MU: 4.9.5.C.6 and one of the following groups: S[3] - 4.9.4.I.2, .3, &amp; .6.a; or, S[2] - 4.9.4.I.2, .3, &amp; .7.b; or, S[1] - 4.9.4.I.2, .3, &amp; .8</td>
+</tr>
+<tr>
+  <td>Radio or Television Station Only</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.4.I.1 and 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Construction Service</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Day Care</td>
+  <td>P</td>
+  <td>P</td>
+  <td>S [2]</td>
+  <td>NC: 4.9.13.M<br>RVC: 4.9.13.N<br>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Entertainment</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.4.K.1, .2, .3, &amp; .4; 4.9.4.C.3; and 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Financial Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Excluding non-chartered financial institutions</td>
+  <td>P</td>
+  <td>P</td>
+  <td>S [2]</td>
+  <td>NC: 4.9.4.L.3 and 4.9.13.M<br>RVC: 4.9.4.L.3 and 4.9.13.N<br>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Non-chartered Financial Institutions only</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Food Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Food Court</td>
+  <td>P</td>
+  <td>P</td>
+  <td>S [2]</td>
+  <td>NC: 4.9.4.M.1 &amp; 5-7 and 4.9.13.M<br>RVC: 4.9.4.M.1, .2, .6, &amp;.7, and 4.9.13.N<br>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Excluding soup kitchens</td>
+  <td></td>
+  <td>P</td>
+  <td>S [2]</td>
+  <td>RVC: 4.9.4.M.2, 4.9.4.V.3, and 4.9.13.N<br>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Excluding soup kitchens and Alcoholic Beverage Sales</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>NC: 4.9.4.M.1 &amp; 5 and 4.9.13.M</td>
+</tr>
+<tr>
+  <td>With Alcoholic Beverage Service as an accessory use</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td>RVC: 4.9.4.V.2, .3, &amp; .4 and 4.9.4.C.3</td>
+</tr>
+<tr>
+  <td>Funeral Service</td>
+  <td></td>
+  <td></td>
+  <td>S[2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Medical Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Extended Healthcare</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Major</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Transportation Services, Air Carrier, Helipad as an accessory use to a Medical Service, Major Use</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>MU: 4.9.4.Q.2</td>
+</tr>
+<tr>
+  <td>Outpatient, excluding blood donor centers</td>
+  <td></td>
+  <td>P</td>
+  <td>P</td>
+  <td>RVC: 4.9.4.O.2 and 4.9.13.N<br>MU: 4.9.4.O.2, 4.9.4.P.2.b, .3, &amp; .4, and 4.9.13.A.2</td>
+</tr>
+<tr>
+  <td>Parking</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Personal Service</td>
+  <td>P</td>
+  <td>P</td>
+  <td>S [2]</td>
+  <td>NC: 4.9.13.M<br>RVC: 4.9.4.T.2 &amp; .3 and 4.9.13.N<br>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Research and Product Development</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Technical Service</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Trade Service and Repair:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Major (includes automotive bodywork &amp; paint booths)</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Minor</td>
+  <td>P</td>
+  <td></td>
+  <td>S [2]</td>
+  <td>NC: 4.9.13.M and excluding upholstery shops<br>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Transportation Service:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Airport Authority</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>MU: 4.9.13.Q.5</td>
+</tr>
+<tr>
+  <td>Land Carrier</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Travelers Accommodation, Lodging</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <th colspan="5">Additional Permitted Accessory Uses</th>
+</tr>
+<tr>
+  <td>Salvaging and Recycling as an accessory use to any permitted Commercial Services use</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>NC, RVC: 4.9.5.G.1 &amp; .3<br>MU: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <th colspan="5">Industrial Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Craftwork</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>General Manufacturing</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Perishable Goods Manufacturing</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.E.1 and 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Precision Manufacturing</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Processing and Cleaning</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <th colspan="5">Additional Permitted Accessory Uses</th>
+</tr>
+<tr>
+  <td>Hazardous Material Storage is permitted as an accessory use to any permitted principal land use in any Land Use Group</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>MU: 4.9.10.B.1 &amp; .2.a</td>
+</tr>
+<tr>
+  <th colspan="5">Recreation Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Parks and Recreation</td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td>NC: 4.9.13.M</td>
+</tr>
+<tr>
+  <td colspan="5">Residential Land Use Group With Land Use Class/Type:</td>
+</tr>
+<tr>
+  <td>Family Dwelling:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Duplex</td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Manufactured Housing</td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Multifamily Development</td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td>For 3-4 Units: 4.9.7.B.12 &amp; .14</td>
+</tr>
+<tr>
+  <td>Single-family , Attached or Detached</td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td>All: 4.9.7.B.12</td>
+</tr>
+<tr>
+  <td>Middle Housing</td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td>NC, MU: 4.9.7.B.11 - .14</td>
+</tr>
+<tr>
+  <td>Accessory Dwelling Unit</td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td>NC, MU: 4.9.7.B.12 &amp; 6.6.3</td>
+</tr>
+<tr>
+  <td>With Home Occupation as an accessory use to any Family Dwelling use</td>
+  <td>P</td>
+  <td></td>
+  <td>P</td>
+  <td>NC, MU: 4.9.7.D</td>
+</tr>
+<tr>
+  <td>Group Dwelling</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Mobile Home Dwelling</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Mobile Home Park</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Residential Care Services, Adult Care or Physical and Behavioral Health Services</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>NC: 4.9.7.J.3.a, &amp; .4 and 4.9.13.M</td>
+</tr>
+<tr>
+  <td>Residential Care Services, Rehabilitation Service - Children’s Facility (maximum 10 Residents)</td>
+  <td>P</td>
+  <td></td>
+  <td></td>
+  <td>NC: 4.9.7.J.1, 3.a, &amp; .4 and 4.9.13.M</td>
+</tr>
+<tr>
+  <th colspan="5">Retail Trade Land Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Construction Material Sales</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Food and Beverage Sales:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Farmers’ Market only</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>MU: 4.9.9.A.12.a-.d</td>
+</tr>
+<tr>
+  <td>Excluding Large Retail Establishments</td>
+  <td></td>
+  <td>S [1]</td>
+  <td>S [2]</td>
+  <td>NC: 4.9.13.M and excluding alcoholic beverage sales<br>RVC: 4.9.13.N<br>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Large Retail Establishment</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RVC: 4.9.9.D and 4.9.13.N</td>
+</tr>
+<tr>
+  <td>General Merchandise Sales:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Excluding Large Retail Establishments</td>
+  <td>P</td>
+  <td>P</td>
+  <td>S [2]</td>
+  <td>NC: 4.9.13.M<br>RVC: 4.9.13.N<br>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Large Retail Establishment</td>
+  <td></td>
+  <td>S [1]</td>
+  <td></td>
+  <td>RVC: 4.9.9.D and 4.9.13.N</td>
+</tr>
+<tr>
+  <td>Heavy Equipment Sales</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6 and 4.9.9.C</td>
+</tr>
+<tr>
+  <td>Vehicle Rental and Sales</td>
+  <td></td>
+  <td></td>
+  <td>S[2]</td>
+  <td>MU: 4.9.5.C.6 and 4.9.9.G.1, .2</td>
+</tr>
+<tr>
+  <td>Farmers’ Market as an accessory use to any permitted principal use in every land use group</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.9.A.12.a-.e</td>
+</tr>
+<tr>
+  <th>Smoke Shop</th>
+  <th></th>
+  <th></th>
+  <th>S [2]</th>
+  <th>MU: 4.9.9.H</th>
+</tr>
+<tr>
+  <th colspan="5">Additional Permitted Accessory Uses</th>
+</tr>
+<tr>
+  <td>Salvaging and Recycling as an accessory use to any permitted Retail Trade uses</td>
+  <td>P</td>
+  <td>P</td>
+  <td>P</td>
+  <td>All: 4.9.5.G.1 &amp; .3</td>
+</tr>
+<tr>
+  <th colspan="5">Storage Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Commercial Storage</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.10.A</td>
+</tr>
+<tr>
+  <td>Hazardous Material Storage as an accessory use to any permitted principal use in every land use group</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>MU: 4.9.10.B.1 &amp; .2.a</td>
+</tr>
+<tr>
+  <td>Personal Storage</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6 and 4.9.10.C.3, .6</td>
+</tr>
+<tr>
+  <th colspan="5">Utilities Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Distribution System</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>S [2]</td>
+  <td>NC: 4.9.11.A.1, .5, &amp; .9 and 4.9.13.M<br>RVC: 4.9.11.A.1, .5, &amp; .9 and 4.9.13.N<br>MU: 4.9.5.C.6 and 4.9.11.A.1, .2, .5, .8, .9, &amp; .11</td>
+</tr>
+<tr>
+  <td>Renewable Energy Generation</td>
+  <td></td>
+  <td></td>
+  <td>P</td>
+  <td>MU(P): 4.9.11.B.1, .2, .3, &amp; .5</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>S[2]</td>
+  <td>MU(S): 4.9.5.C.6</td>
+</tr>
+<tr>
+  <th colspan="5">Wholesaling Use Group With Land Use Class/Type:</th>
+</tr>
+<tr>
+  <td>Business Equipment Supply and Wholesaling</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Construction/Heavy Equipment Wholesaling</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td>Food and Beverage Wholesaling</td>
+  <td></td>
+  <td></td>
+  <td>S [2]</td>
+  <td>MU: 4.9.5.C.6</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+
+<p>(Am. Ord. 11070, 5/14/2013; Am. Ord. 11257, 4/21/2015; Am. Ord. 11328, 12/8/2015; Am. Ord. 11409, 11/9/2016; Am. Ord. 11577, 8/8/2018; Am. Ord. 11608, passed 12/18/2018; Am. Ord. 11890, 12/7/2021; Am. Ord. 11996, 3/21/2023; Am. Ord. 12057, 11/14/2023; Am. Ord. 12060, 11/28/2023; Am. Ord. 12219, 12/16/2025)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.path", "toc.follow", "toc.integrate", "search.highlight", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
