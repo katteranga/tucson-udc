@@ -72,6 +72,7 @@ class ExportParser(HTMLParser):
         self.buf = []
         self.in_heading = 0
         self.toc_depth = 0      # >0 while inside an article table of contents
+        self.sticky_depth = 0   # >0 inside a table's duplicate sticky header
         self.div_stack = []
 
     def _flush(self):
@@ -103,15 +104,22 @@ class ExportParser(HTMLParser):
             self._enter(REFERENCES)
         if tag == "div":
             cls = a.get("class", "")
-            is_toc = cls in ("ChapAn", "ChapAn-center")
-            self.div_stack.append(is_toc)
-            if is_toc:
+            # American Legal repeats each table's header rows in a separate
+            # "xsl-table--header" copy used as a sticky header; the real
+            # header rows are already in the "xsl-table--body" table.
+            kind = ("toc" if cls in ("ChapAn", "ChapAn-center")
+                    else "sticky" if "xsl-table--header" in cls.split() else None)
+            self.div_stack.append(kind)
+            if kind:
                 self._flush()
+            if kind == "toc":
                 self.toc_depth += 1
+            elif kind == "sticky":
+                self.sticky_depth += 1
         if re.fullmatch(r"h[1-6]", tag):
             self._flush()
             self.in_heading += 1
-        if tag == "img" and self.started and a.get("src"):
+        if tag == "img" and self.started and a.get("src") and not self.sticky_depth:
             self._flush()
             if self.section is not None:
                 name = a["src"].rsplit("/", 1)[-1]
@@ -125,17 +133,21 @@ class ExportParser(HTMLParser):
             self._flush()
             self.in_heading -= 1
         if tag == "div" and self.div_stack:
-            if self.div_stack.pop():
+            kind = self.div_stack.pop()
+            if kind == "toc":
                 if self.skip_toc:
                     self.buf = []
                 else:
                     self._flush()
                 self.toc_depth -= 1
+            elif kind == "sticky":
+                self.buf = []
+                self.sticky_depth -= 1
         if tag in ("td", "th", "p", "li"):
             self.buf.append(" ")
 
     def handle_data(self, data):
-        if self.started:
+        if self.started and not self.sticky_depth:
             self.buf.append(data)
 
     def close(self):
@@ -161,11 +173,20 @@ HIDE = {c: chr(0xE000 + i) for i, c in enumerate(ESCAPABLE)}
 SHOW = {v: k for k, v in HIDE.items()}
 
 
+def strip_raw_html(line):
+    """Text of a line inside a raw HTML block, which Markdown leaves as is."""
+    line = re.sub(r"<img\b[^>]*\bsrc=\"([^\"]+)\"[^>]*>",
+                  lambda m: f" [image:{m.group(1).rsplit('/', 1)[-1]}] ", line)
+    return re.sub(r"<[^>]+>", " ", line)
+
+
 def strip_markdown(line):
     line = re.sub(r"\\(.)", lambda m: HIDE.get(m.group(1), m.group(0)), line)
     line = re.sub(r"^(\s*>)+", "", line)                     # blockquote
     line = re.sub(r"^(\s*)[-*+](\s+)", "\\1•\\2", line)       # bullet -> •
     line = re.sub(r"!\[[^\]]*\]\(([^)\s]+)[^)]*\)",
+                  lambda m: f" [image:{m.group(1).rsplit('/', 1)[-1]}] ", line)
+    line = re.sub(r"<img\b[^>]*\bsrc=\"([^\"]+)\"[^>]*>",
                   lambda m: f" [image:{m.group(1).rsplit('/', 1)[-1]}] ", line)
     line = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", line)   # links -> text
     line = re.sub(r"<[^>]+>", " ", line)                     # inline HTML
@@ -206,6 +227,7 @@ def load_repo(docs_dir):
             continue
         files.append(path)
         section = None
+        in_html = False
         for lineno, raw in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
             where = f"{path.as_posix()}:{lineno}"
             heading = DOC_HEADING_RE.match(raw)
@@ -222,7 +244,12 @@ def load_repo(docs_dir):
             if section not in sections:
                 sections[section] = []
                 order.append(section)
-            tokens = tokenize_doc_text(strip_markdown(text), bool(heading), where)
+            if raw.startswith("<table"):
+                in_html = True
+            stripped = strip_raw_html(text) if in_html else strip_markdown(text)
+            if in_html and "</table>" in raw:
+                in_html = False
+            tokens = tokenize_doc_text(stripped, bool(heading), where)
             sections[section].extend(tokens)
             if tokens:
                 where_from = sources.setdefault(section, {})
